@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>표와 리스트예제</title>
+    <style>
+        li a{color: red;}
+        li li {font-weight: bold;}
+        ul>li>a{background-color: aqua;}
+        li>ol>li>a{background-color: yellow;}
+        .as {background-color: aqua;}
+        .aa {font-weight: bold;}
+    </style>
+
 </head>
 <body>
     <h1>표와 리스트예제</h1>
@@ -12,15 +21,15 @@
     <h2>리스트예제001</h2>
 
     <ul>
-        <li><b>과일</b>
+        <li><a href=""><b>과일</b></a>
             <ol>
-                <li>딸기</li>
-                <li>사과</li>
-                <li>포도</li>
+                <li><a href="">딸기</a></li>
+                <li><a href="">사과</a></li>
+                <li><a href="">포도</a></li>
             </ol>
         </li>
 
-        <li>채소
+        <li><a href="">채소</a>
         <ol>
             <li>상추</li>
             <li>배추</li>
@@ -151,9 +160,9 @@
 
     <table border="1">
         <tr>
-            <td colspan="3">공연요금</td>
+            <td colspan="3" class="as">공연요금</td>
         </tr>
-        <tr>
+        <tr class="aa">
             <td>구분</td>
             <td>R석</td>
             <td>S석</td>
@@ -185,11 +194,11 @@
 
     <table border="1">
         <tr>
-            <td colspan="6">한국의 차</td>
+            <td colspan="6" class="as">한국의 차</td>
             
         </tr>
         <tr>
-            <td rowspan="6">뿌리차</td>
+            <td rowspan="6" class="aa">뿌리차</td>
             <td>인삼차</td>
             <td rowspan="9">과일차</td>
             <td>수정과</td>

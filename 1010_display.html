@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃_display란?</title>
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/5259710eda.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+    <h1>display란?</h1>
+    <p>display는 태그의 기본요소로 눈에 보이게 만드는 형태를 잡아주는 
+        구조를 이야기하며 inline / block 으로 대표된다.
+    </p>
+
+    <ul>
+        <li>block : 기본특성
+            <ul>
+                <li>
+                    가로값을 100%기준으로 하므로 자동줄바꿈 성질이 있음
+                </li>
+                <li>대표요소로는 hn태그 , p,div,ul등이 있고 몇몇태그들은 
+                    블럭요소안에 블럭요소를 넣을수없다.
+                </li>
+                <li>태그의 가장기본완전첼로 패딩, 마진 등 사용의 문제가 없다.</li>
+                <li>css를 통해 블럭을 다른요소로 다른요소를 블럭으로 바꿀없다</li>
+            </ul>
+        </li>
+        <li>inline : 기본특성
+            <ul>
+                <li>줄바꿈되지 않으며 요소 옆으로 배치된다.</li>
+                <li>불완전체의 요소로 크기값이 지정되지않 패딩마진
+                    등의 값이 정확히 적용되지않는다
+                </li>
+                <li>블럭요소안에 내용을 작성할수 있고, 인라인요소안에도 
+                    인라인요소안에는 블럭요소를 담을수없다.
+                </li>
+            </ul>
+        </li>
+        <li>inline-block요소 : 인라인과 블럭요소의 성질이 섞여있음<br>
+        크기값, 마진,패딩 적용가능 하며 요소 옆자리에 배치됨</li>
+        <li>none : 요소를 사라지게함 공간도 같이 사라짐</li>
+    </ul>
+
+    <div class="ex001">
+
+        block <em>lnline</em> <span>inline-block</span>
+    </div>
+
+    <div class="ex002">
+        블럭요소를 가운데로 보내는 방법1
+    </div>
+    <div class="ex003">
+        블럭요소를 가운데로 보내는 방법2
+    </div>
+
+    <style>
+        .ex001 {display: block;
+        background-color: antiquewhite;}
+        .ex001 em {background-color: aqua;
+        padding: 20px;}
+        .ex001 span 
+
+        .ex002 {background-color: bisque; 
+        margin-top: 50px;
+        padding: 20 0; 
+        text-align: center;}
+        .ex003  {background-color: aqua;
+        width: 250px;
+        text-align: center;
+        padding: 50px auto;}
+
+
+
+        body {padding-bottom: 500px;}
+        .ex004 {background-color: black;
+            color: #fff;
+        text-align: center;
+    font-size: 12px;
+    padding: 10px;}
+
+        .ex004 i {display: block;
+        background-color: chartreuse;
+        font-size: 28px;
+        padding: 20px 0;}
+            .ex004 em {display: block;
+                background-color: aquamarine;
+            font-size: 28px;}
+
+
+    </style>
+    
+    <div class="ex004"><i class="fa fa-database" aria-hidden="true"></i>
+    <em>데이터 베이스</em>
+    폰트어썸에서 i태그를 <br>통해 가져온 구조</div>
+
+
+    <div class="ex005"><i class="fa-solid fa-chart-simple"></i>
+    <h3>데이터시각화</h3>
+    <div>블럭태그를 활용해서 작업</div>
+</div>
+
+
+    <div class="ex006">
+        <i class="fa-solid fa-hourglass-half"></i>
+    
+    </div>
+
+
+<style>
+
+    .ex005 {}
+    .ex005 i {}
+    .ex005 h3 {margin: 0;
+    padding: 0;
+    font-weight: normal;}
+
+
+
+
+</style>
+
+</body>
+</html>
