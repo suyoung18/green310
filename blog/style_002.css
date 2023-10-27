@@ -1,0 +1,110 @@
+/* 언어설정 */
+
+@charset "UTF-8";
+
+
+/* 구글폰트 */
+
+@import url(https://fonts.googleapis.com/css2?family=Paytone+One&display=swap);
+
+
+
+/* 리셋 */
+
+*{margin: 0; padding: 0;}
+
+ul, ol {list-style: none;}
+a {text-decoration: none;
+color: #000;}
+
+img {border: none;}
+
+/* 전체 설정 */
+
+body {width: 1280px; margin: 0 auto;}
+
+
+/* 박스3,4 가로정렬  */
+/* after 정렬방식 */
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+.boxf {display: flex;}
+
+
+/* 로고설정 */
+
+.box1 {}
+.box1 h1 {font-size: 30px; 
+font-weight: normal;
+color: #83a4a8;
+font-family: 'Paytone One',sans-serif;}
+
+
+/* 박스2 메뉴바 */
+
+.box2 {background-color: #7cbac1;}
+.box2 a {float: left; width: auto;}
+.box2 ul {content: "";
+display: flex; 
+clear: both;}
+.gta a {padding: 15px;
+font-size: 14px;
+display: block;}
+.gta a:hover {background-color: #75dbe7;}
+
+
+
+/* 스토리 설정 */
+
+.story h1 {font-size: 36px;
+font-weight: 400px;
+margin-bottom: 20px;}
+
+
+.story p {margin-bottom: 20px;}
+.story img {width: 100%;
+height: auto;}
+
+.story h2 {font-weight: normal;
+                font-size: 26px;
+                border-left: 10px solid #7cbac1;
+                padding-left: 10px;
+                margin-top: 40px;
+                margin-bottom: 20px;}
+
+
+/* may설정 */
+
+.may {margin-bottom: 25px; 
+        margin-top: 25px;
+        display: flex;}
+.may ul {display: flex;}
+.may a {display: block;
+        padding: 3px 5px;
+        font-size: 12px;
+background-color: #75dbe7;
+border-radius: 2px;
+font-size: 12px;
+margin-right: 5px;}
+.may a:hover {background-color: #94ecf6;}
+
+
+
+
+
+/* 작성일 */
+
+
+.time {margin-bottom: 20px;
+margin-top: -10px;
+color: #aaa;
+}
+
+.time i {
+font-size: 20px;
+vertical-align: bottom;
+margin-right: 5px;}
+
+
+
+

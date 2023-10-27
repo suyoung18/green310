@@ -1,0 +1,494 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* reset */
+* {margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+color: #555;}
+img {border: none;
+    vertical-align: bottom;}
+
+
+/* 레이아웃 */
+
+header {position: fixed;
+        background-color: #fff;
+    width: 15%;
+height: 100%;
+opacity: 0.8;}
+
+nav {background-color: #212121;
+    height: 35px;
+    width: 85%;
+    margin-left: 15%;
+    }
+section {width:85%;
+        margin-left: 15%;}
+
+article {float: left;
+        height: 260px;
+    width: 20%;}
+
+/* 각각박스설정 */
+
+article:nth-child(1) {background-color: #ccc;}
+article:nth-child(2) {background-color: #bbb;}
+article:nth-child(3) {background-color: #aaa;}
+article:nth-child(4) {background-color: #999;}
+article:nth-child(5) {background-color: #888;}
+article:nth-child(6) {background-color: #777;}
+article:nth-child(7) {background-color: #666;}
+article:nth-child(8) {background-color: #555;}
+article:nth-child(9) {background-color: #444;}
+article:nth-child(10) {background-color: #333;}
+article:nth-child(11) {background-color: #222;}
+article:nth-child(12) {background-color: #111;}
+
+/* 기본설정구간 (데스트탑기준) */
+
+article:nth-child(1){width:60% ;
+                    height: 520px;}
+article:nth-child(2){width:40% ;}
+article:nth-child(6){width:40% ;}
+article:nth-child(9){width:40% ;}
+
+/* header설정 */
+header {}
+header h1 {position: absolute;
+            top: 70px;
+            left: 50%;
+            width: 180px;
+        height: 136px;
+        margin-left: -90px;
+        background-image: url('img/logo1.png');
+        text-indent: -9999px;}
+header .gnb {position: absolute;
+top: 50%;
+margin-top: -100px;
+right: 30px;}
+header .gnb li {}
+header .gnb li a {display: block;
+                    padding: 10px 30px;
+                font-size: 17px;
+            font-weight: bold;
+        color: #555;
+        }
+header .gnb li i {margin-right: 20px;}
+
+header .snsSet {position: absolute;
+                  bottom:50px;
+                  right: 50%;
+                  margin-right: -45px;
+
+                  width: 90px;
+    }
+header .snsSet a {display: inline-block;
+float: left;}
+header .snsSet a img {}
+
+
+
+
+
+
+/* 1번구간 1280px이상 1599px이하구간################ */
+@media(min-width:1280px) and (max-width:1599px){
+
+    header {position: relative;
+    width: 100%;
+height: 80px;
+opacity: 0.8;}
+
+nav {
+  
+    width: 100%;
+    margin-left:0;
+    }
+section {width:100%;
+        margin-left: 0}
+
+
+/* header설정 */
+header {}
+header h1 {
+            top:20px;
+            left: 20px;
+            width: 250px;
+        height: 50px;
+        margin-left: 0;
+        background-image: url('img/logo2.png');
+        }
+header .gnb {position: absolute;
+top: 20px;
+margin-top: 0;
+right: 200px;
+display: flex;}
+header .gnb li {}
+header .gnb li a {display: block;
+                    padding: 10px 30px;
+                font-size: 17px;
+            font-weight: bold;
+        color: #555;
+        }
+header .gnb li i {margin-right: 20px;}
+
+header .snsSet {position: absolute;
+                  bottom:20px;
+                  right: 20px;
+                  margin-right: 0;
+
+                  width: 90px;
+    }
+header .snsSet a {display: inline-block;
+float: left;}
+header .snsSet a img {}
+
+
+
+
+}
+
+/* 2번구간 1024px이상 1279px이하구간################ */
+@media(min-width:1024px) and (max-width:1279px){
+    header {position: relative;
+        width: 100%;
+    height: 80px;
+    opacity: 0.8;}
+    nav {
+        width: 100%;
+        margin-left:0;
+        }
+    section {width:100%;
+            margin-left: 0}
+
+
+    article {width: 25%;}
+
+    article:nth-child(1){width:75% ;
+        height: 520px;}
+article:nth-child(2){width:25% ;}
+article:nth-child(6){width:50% ;}
+article:nth-child(7){width:50% ;}
+article:nth-child(9){width:25% ;}
+article:nth-child(10){width:50% ;}
+
+
+
+/* header설정 */
+header {}
+header h1 {
+            top:20px;
+            left: 20px;
+            width: 250px;
+        height: 50px;
+        margin-left: 0;
+        background-image: url('img/logo2.png');
+        }
+header .gnb {position: absolute;
+top: 20px;
+margin-top: 0;
+right: 200px;
+display: flex;}
+header .gnb li {}
+header .gnb li a {display: block;
+                    padding: 10px 10px;
+                font-size: 17px;
+            font-weight: bold;
+        color: #555;
+        }
+header .gnb li i {margin-right: 20px;}
+
+header .snsSet {position: absolute;
+                  bottom:20px;
+                  right: 20px;
+                  margin-right: 0;
+
+                  width: 90px;
+    }
+header .snsSet a {display: inline-block;
+float: left;}
+header .snsSet a img {}
+
+
+
+
+
+}
+
+
+
+/* 3번구간 780px이상 1023px이하구간################ */
+@media(min-width:780px) and (max-width:1023px){
+    header {position: relative;
+        width: 100%;
+    height: 80px;
+    opacity: 0.8;}
+    nav {
+        width: 100%;
+        margin-left:0;
+        }
+    section {width:100%;
+            margin-left: 0}
+
+
+    article {width: 33.3333%;}
+
+    article:nth-child(1){width:100% ;
+        height:400px;}
+article:nth-child(2){width:66.6666% ;}
+article:nth-child(4) {display: none;}
+article:nth-child(6){width:66.6666% ;}
+article:nth-child(7){width:50% ; display: none;}
+article:nth-child(9){width:33.3333% ;}
+article:nth-child(10){width:50% ; display: none;}
+article:nth-child(12) {display: none;}
+
+
+
+/* header설정 */
+header {}
+header h1 {
+            top:20px;
+            left: 20px;
+            width: 250px;
+        height: 50px;
+        margin-left: 0;
+        background-image: url('img/logo2.png');
+        }
+header .gnb {position: absolute;
+top: 20px;
+margin-top: 0;
+right: 20px;
+display: flex;}
+header .gnb li {}
+header .gnb li a {display: block;
+                    padding: 10px 10px;
+                font-size: 17px;
+            font-weight: bold;
+        color: #555;
+        }
+header .gnb li i {margin-right: 20px;}
+
+header .snsSet {position: absolute;
+                  bottom:20px;
+                  right: 20px;
+                  margin-right: 0;
+
+                  width: 90px;
+                  display: none;
+    }
+header .snsSet a {display: inline-block;
+float: left;}
+header .snsSet a img {}
+
+
+
+
+}
+
+
+/* 4번구간 640px이상 779px이하구간################ */
+@media(min-width:640px) and (max-width:779px){
+    header {position: relative;
+        width: 100%;
+    height: 80px;
+    opacity: 0.8;}
+    nav {
+        width: 100%;
+        margin-left:0;
+        }
+    section {width:100%;
+            margin-left: 0}
+
+
+    article {width: 50%;}
+
+    article:nth-child(1){width:100% ;
+        height:400px;}
+article:nth-child(2){width:100% ;}
+article:nth-child(3) {display: none;}
+article:nth-child(4) {display: none;}
+article:nth-child(6){width:50% ;}
+article:nth-child(7){width:50% ; display: none;}
+article:nth-child(9){width:50% ;}
+article:nth-child(10){width:50% ; display: none;}
+article:nth-child(12) {display: block;}
+
+
+
+/* header설정 */
+header {}
+header h1 {
+            top:20px;
+            left: 20px;
+            width: 200px;
+        height: 40px;
+        margin-left: 0;
+        background-image: url('img/logo2.png');
+        background-size: contain;    
+    }
+header .gnb {position: absolute;
+top: 20px;
+margin-top: 0;
+right: 20px;
+display: flex;}
+header .gnb li {}
+header .gnb li a {display: block;
+                    padding: 10px 10px;
+                font-size: 14px;
+            font-weight: bold;
+        color: #555;
+        }
+header .gnb li i {margin-right: 10px;}
+
+header .snsSet {position: absolute;
+                  bottom:20px;
+                  right: 20px;
+                  margin-right: 0;
+
+                  width: 90px;
+                  display: none;
+    }
+header .snsSet a {display: inline-block;
+float: left;}
+header .snsSet a img {}
+
+
+
+
+
+}
+
+
+
+/* 5번구간 480px이상 639px이하구간################ */
+@media(min-width:480px) and (max-width:639px){
+    header {position: relative;
+        width: 100%;
+    height: 130px;
+    opacity: 0.8;}
+    nav {display: none;
+        width: 100%;
+        margin-left:0;
+        }
+    section {width:100%;
+            margin-left: 0}
+
+
+    article {width: 50%;
+    height: 150px;}
+
+    article:nth-child(1){width:100% ;
+        height:400px;}
+article:nth-child(2){width:100% ;}
+article:nth-child(3) {display: none;}
+article:nth-child(4) {display: none;}
+article:nth-child(6){width:50% ;}
+article:nth-child(7){width:50% ; display: none;}
+article:nth-child(9){width:50% ;}
+article:nth-child(10){width:50% ; display: none;}
+article:nth-child(12) {display: block;}
+
+
+
+/* header설정 */
+header {}
+header h1 {position: relative;
+            top:20px;
+            left: 0;
+            width: 200px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('img/logo2.png');
+        background-size: contain;    
+    }
+header .gnb {position: relative;
+top: 40px;
+margin-top: 0;
+right: 0;
+display: flex;
+justify-content: space-around;}
+header .gnb li {}
+header .gnb li a {display: block;
+                    padding: 10px 10px;
+                font-size: 14px;
+            font-weight: bold;
+        color: #555;
+        }
+header .gnb li i {margin-right: 10px;}
+
+header .snsSet {position: absolute;
+                  bottom:20px;
+                  right: 20px;
+                  margin-right: 0;
+
+                  width: 90px;
+                  display: none;
+    }
+header .snsSet a {display: inline-block;
+float: left;}
+header .snsSet a img {}
+
+
+
+
+
+
+}
+
+
+/* 6번구간 479px이하구간################ */
+@media(max-width:479px){
+header {position: fixed;
+        width: 100%;
+    z-index:10 ;
+background-color: transparent;}
+nav {display: none;}
+section{width: 100%;
+        margin-left: 0;
+        z-index:0 ;}
+article {display: none;}
+
+article:nth-child(1) {display: block;
+                        position: fixed;
+                        width: 100%;
+                        height: 100%;}
+
+/* 헤더설정 */
+
+
+header .gnb {
+
+    right: 50%;
+    margin-right: -125px;
+   
+    }
+    header .gnb li {
+        width: 250px;
+     
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+    header .gnb li a {display: block;
+                     background: #000;     
+               border-radius: 5px;
+                font-weight: bold;
+            color: #fff;
+            }
+    header .gnb li i {margin-right: 10px;}
+    
+    header .snsSet {position: absolute;
+                      bottom:20px;
+                      right: 20px;
+                      margin-right: 0;
+    
+                      width: 90px;
+                      display: none;
+        }
+
+
+
+}
