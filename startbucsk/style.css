@@ -191,7 +191,8 @@ z-index: 0;
 /* banner설정 */
 
 .banner {background-color: #1e3932;
-        padding: 20px 0;}
+        padding: 20px 0;
+        color: #fff;}
 
 .banner_inner {display: flex;
                 width: 100%;
@@ -201,7 +202,7 @@ z-index: 0;
 
 .banner .logo_banner img {width: 80%;}
 
-.banner .txtbox {background-color: aqua;
+.banner .txtbox {
                 width:calc(100% - 300px)}
 
 
@@ -215,6 +216,10 @@ z-index: 0;
                     display: flex;
                     align-items: flex-end;}
                     
+
+.banner .boxTop .txt:nth-child(1) {font-size: 20px;
+                                    margin-bottom: 10px;}
+
 
     .banner .boxTop .btn {display: flex;}
     .banner .boxTop .btn p {border: 2px solid #fff;
@@ -238,6 +243,241 @@ z-index: 0;
 
 
 
+
+/* 프로모션 설정 */
+
+.promotion {height: 43vh; 
+            background-image: url(img/2023_autumn_promotion_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            overflow: hidden;
+            width: 100%;}
+
+
+.promotion>div {width: 50%;
+                height: 100%;}
+
+.promotion .imgBox {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;}
+.promotion .imgBox img {width: 100%;
+    max-width: 500px;
+}
+
+.promotion .txtBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 50px;
+                    align-items: flex-start;}
+.promotion .txtBox img {width: 100%;
+                        max-width: 300px;}
+.promotion .txtBox p {border: 2px solid #155c34;
+                        border-radius: 5px;
+                        padding: 10px 30px;
+                        margin-top: 50px;
+                        color: #155c34;}
+
+
+
+/* reserve 설정 */
+
+.reserve  {height: 400px; 
+    background-image: url(img/230811_pc_reserve_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    width: 100%;}
+
+
+.reserve>div {width: 50%;
+        height: 100%;}
+
+.reserve .imgBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 150px;}
+
+.reserve .imgBox img {width: 100%;
+max-width: 200px;
+}
+
+.reserve .txtBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 50px;
+            align-items: flex-end;}
+.reserve .txtBox img {width: 100%;
+                max-width: 300px;}
+.reserve .txtBox p {border: 2px solid #B68341;
+                border-radius: 5px;
+                padding: 10px 30px;
+                margin-top: 50px;
+                color: #B68341;}
+
+
+
+
+/* pick 설정 */
+
+.pick {height: 800px; 
+    background-image: url(img/230921_1_pc_pick_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    width: 100%;}
+
+
+.pick>div {width: 50%;
+        height: 100%;}
+
+.pick .imgBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 150px;}
+
+.pick .imgBox img {width: 100%;
+max-width: 950px;
+}
+
+.pick .txtBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 50px;
+            align-items: flex-end;}
+.pick .txtBox img {width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;}
+
+.pick .txtBox img:nth-child(2) {width: 100%;
+    
+                                max-width: 400px;}
+
+                
+.pick .txtBox p {border: 2px solid #fff;
+                border-radius: 5px;
+                padding: 10px 30px;
+                margin-top: 50px;
+                color: #fff;}
+
+
+
+
+/* magazine 설정 */
+
+.magazine {height: 400px; 
+    background-image: url(img/reserve_bg_pc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    flex-direction: row-reverse;
+    width: 100%;
+background-position: center top;
+position: relative;}
+
+
+.magazine>div {width: 50%;
+        
+        position: absolute;}
+
+.magazine .imgBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 200px;
+            left: 50%;}
+
+.magazine .imgBox img {width: 100%;
+max-width: 340px;
+
+}
+
+.magazine .txtBox {
+    left: 10px;
+    top: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            ;
+            align-items: flex-end;}
+.magazine .txtBox img {width: 100%;
+                max-width: 580px;
+                }
+.magazine .txtBox p {border: 2px solid #000;
+                border-radius: 5px;
+                padding: 10px 30px;
+                margin-top: 50px;
+                color: #155c34;
+                align-self: center;
+                margin-left: 400px;}
+
+
+
+/* map 설정 */
+
+.map {height: 400px; 
+    background-image: url(img/store_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+    width: 100%;}
+
+
+.map>div {width: 50%;
+        height: 100%;}
+
+.map .imgBox {
+            position: relative;}
+.map .imgBox img {width: 100%;
+
+position: absolute;
+}
+.map .imgBox img:nth-child(1) {top: 0;
+                                max-width: 360px;
+                                right: 50%;
+                            transform: translateX(70%);}
+.map .imgBox img:nth-child(2) {top: 50%;
+                                max-width: 220px;
+                                right: 50%;
+                                transform: translate(150%, -20%);
+                                }
+
+
+
+
+.map .txtBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+            align-items: flex-start;}
+.map .txtBox img {width: 100%;
+                max-width: 300px;}
+.map .txtBox p {
+                margin-top: 50px;
+                color: #155c34;}
+
+
+
+.map .txtBox p.more {border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 30px;}
+
+
+    footer {height: 600px;
+            background-color: #333;}
 
 
 
