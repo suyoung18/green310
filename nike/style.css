@@ -1,0 +1,323 @@
+/* 언어설정 */
+
+@charset 'UTF-8';
+
+/* 리셋 */
+
+*{margin: 0;
+    padding: 0;}
+
+ul, ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+
+
+
+
+.via {width: 100%;
+        height: 100%;
+    position: fixed;
+    }
+
+.via video {width: 100%;
+            min-width: 1600px;}
+
+
+
+
+/* 헤더설정 */
+
+header {width: 700px;
+        height: 100%;
+        position: fixed;
+        background: linear-gradient(-59deg, #e6fc55, #b9fb05, #97e031);
+        transform: skewX(-54deg);
+        left: -500px;
+        top: 0;}
+
+
+/* sns설정 */
+
+.sns {width: 300px;
+        height: 100px;
+        background-color: magenta;
+        right: 50px;
+        position: fixed;
+        top: 60px;}
+
+
+/* txtBox 설정 */
+
+.txtBox {width: 450px;
+        height: 290px;
+        background-color: coral;
+        right: 0;
+        top: 450px;
+        position: fixed;}
+
+/* slide 설정 */
+
+.slide {width: 800px;
+    height: 100%;
+    position: fixed;
+    background: #111;
+    transform: skewX(-58deg);
+    right: -800px;
+    bottom: 0;
+    opacity: 0.3;
+    transition: all 0.6s;}
+
+.slide:hover {right: -400px;}
+
+
+.slide .con {width: 400px;
+            height: 100%;
+            background-color: #000;
+            position: absolute;
+            left: 200px;
+            padding: 10px;
+            bottom: 0;
+            box-sizing: border-box;}
+
+.slide:hover .con {left: 50px;}
+
+
+.slide .con p {position: absolute;
+            width: 300px;
+            height: 100px;
+            left: 150px;}
+
+
+.slide .con p:nth-child(1) {bottom: 270px;
+                            transition: all 1.5s;}
+
+.slide .con p:nth-child(2) {bottom: 160px;
+    transition: all 1.0s;}
+
+.slide .con p:nth-child(3) {bottom: 50px;
+    transition: all 0.5s;}
+
+.slide:hover .con p {left: 50px;}
+
+.slide .con em {display: inline-block;
+                transform: skewX(58deg);
+                font-size: 16px;
+                color: #b9fb05;
+                font-weight: bold;
+                }
+
+
+
+
+
+
+/* nds설정 */
+
+
+
+
+.nds {position: absolute;
+    right: 0;
+    top: 150px;}
+
+
+.nds li {}
+
+
+.nds li a {display: block;
+          width: 220px;
+          height: 50px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #222;
+          
+          text-align: right;
+          margin-bottom: 5px;
+          padding-right: 40px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;}
+
+
+.nds li a em {
+transform: skewX(40deg);
+/* dispiay: inline-block; 부모에 flex 선언으로 인해 자동으로 
+inline-block이 진행됨 */
+/* transform은 block 성질에만 설정됨 */
+}
+
+.nds>li:nth-child(1) a {background-color: #111;
+                      color: #fff;}
+
+
+.nds li a:hover {background-color: #111;
+                color: #fff;}
+
+
+/* 2뎁스 설정 */
+
+.nds>li {position: relative;
+        }
+
+
+.nds ul {position: absolute;
+      left: 0;
+      top: 0;
+      transition: all 0.4s;
+      opacity: 0;}
+
+
+
+.nds ul li a {display: block;
+            width: 150px;
+            color: #fff;
+            background-color:  #222;
+            border-bottom: 1px solid #b9fb05;
+            line-height: 2;
+            box-sizing: border-box;
+            height: 40px;}
+
+            .gnb ul li a em {
+              display: inline-block;}
+
+.nds>li:nth-child(1) ul {opacity: 0.8;
+                      left: 205px;
+                      top: -10px;}
+
+
+.nds>li:hover ul {opacity: 0.8;
+                left: 205px;}
+
+
+
+.slide .btn {
+    position: absolute;
+    bottom: 40px;
+    left: 150px;
+    color: #b9fb05;
+    width: 140px;
+    height: 55px;
+    display: flex;
+    transition: all 0.7s;
+}
+
+.slide .btn p {font-size: 90px;
+                transform: skewX(59deg);
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 0.3;
+
+
+}
+
+
+.slide .btn p:nth-child(1) {animation: ani 2.3s 0.2s infinite;}
+
+.slide .btn p:nth-child(2) {animation: ani 2.3s 0.6s infinite;}
+
+.slide .btn p:nth-child(3) {animation: ani 2.3s 1.2s infinite;}
+
+
+
+
+
+@keyframes ani {
+
+    0% {left: 0;}
+    100% {left: -100px;
+        opacity: 0;
+        font-size: 120px;
+    line-height: 0.1;}
+
+}
+
+.slide:hover .btn {opacity: 0;
+                left: -1500px;}
+
+
+
+/*
+.nds {position: absolute;
+        top: 150px;
+        right: 0;}
+
+
+.nds li {}
+
+.nds li a {display: block;
+            
+            
+            height: 50px;
+            
+            width: 220px;
+            
+            text-align: right;
+            padding-right: 40px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+justify-content: flex-end;
+            display: flex;
+            box-sizing: border-box;
+align-items: center;
+
+            }
+        
+
+
+.nds li a em {transform: skewX(58deg);}
+
+
+
+
+
+
+
+.nds>li:nth-child(1) a {background-color: #111;
+                        color: #fff;}
+
+
+.nds a:hover {background-color: #111;
+                color: #fff;}
+
+
+
+
+.nds>li {position: relative;}
+.nds ul {position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.8s;
+            opacity: 0;
+                }
+
+
+
+
+.nds a {display: block;
+        width: 150px;
+        color: #fff;
+        background-color: #222;
+        border-bottom: 1px solid #b9fb05;
+        box-sizing: border-box;
+        line-height: 2;
+        height: 40px;}
+        
+.nds>li:nth-child(1) {left: 205px;
+                        opacity: 0.7;
+                        top: -10px;}
+
+.nds em {display: inline-block;}
+
+.nds>li:hover ul {opacity: 0.7;
+                left: 205px;}
+                
+  */
