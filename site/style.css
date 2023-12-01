@@ -1,0 +1,372 @@
+/* 언어설정 */
+
+
+@charset 'UTF-8';
+
+
+
+/* 리셋 */
+
+* {margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+img {vertical-align: bottom;
+        border: none;}
+
+
+
+/* 로고설정 */
+
+.logo {}
+
+.logo h1 {font-size: 30px;
+            }
+
+.logo h1 a {}
+
+
+
+
+/* 네비설정 */
+.gnb {display: flex;
+        height: 100%;
+        justify-content:  flex-end;
+        align-items: flex-end;}
+
+.gnb ul {display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.gnb ul li {}
+
+.gnb a {display: block;
+        padding: 10px 15px;
+        font-size: 14px;}
+
+
+.gnb a:hover {background-color: #eee;}
+
+
+
+
+/* hero 사진설정 */
+
+.topImg {max-width: 100%;}
+
+
+/* 박스4 설정 */
+
+.box4 {display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;}
+
+
+/* 공지사항설정 */
+
+.news {border: 5px solid #ddd;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+    padding: 20px;}
+
+
+
+/* 다양한 브라우저에도 적용할수 있는  밴더픽스 */
+
+.news h2 {font-size: 18px;
+            margin-bottom: 5px;
+            color: #666;}
+.news ul {}
+.news li {}
+.news a {display: block;
+        padding: 5px;
+        font-size: 14px;
+        border-bottom: 2px dotted #ddd;}
+
+.news time {
+    color: #888;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* sns설정 */
+
+
+.sns ul {}
+.sns li {}
+.sns li a {display: block;
+                padding: 10px;
+                background-color: #ccc;
+                color: #fff;
+                font-size: 14px;
+                margin-bottom: 10px;
+                border-radius: 4px;}
+
+.sns li:nth-child(1) a {background-color: #1da1f2;}
+
+.sns li:nth-child(2) a {background-color: #1877f2;}
+
+.sns li:nth-child(3) a {background-color: #e1306c;}
+
+.sns i {margin-right: 10px;
+        font-size: 22px;
+        vertical-align: top;}
+
+.snsInfo {margin-bottom: 20px;
+background-color: #ddd;
+padding:10px;
+text-align: center;
+font-size: 14px;
+}
+
+
+.snsInfo {
+	position: relative;
+	background: #ddd;
+}
+
+.snsInfo:after {
+	top: 100%;
+	left: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #dddd;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+
+
+
+/* 카피라이트 설정 */
+
+.box5 {background-color: #ddd;
+        padding-top: 15px; 
+        padding-bottom: 15px;
+    }
+
+.copyright p {color: #666;
+                font-size: 14px;}
+
+
+
+
+
+
+/* 박스6 설정 */
+
+.summary {text-align: center;}
+.summary a {display: block;
+        background-color: #222;
+        color: #fff;}
+
+.summary i {font-size: 38px;
+        padding: 40px 0;
+display: block;}
+
+.summary h2 {font-size: 20px;
+                padding: 5px 0;}
+
+.summary p {font-size: 12px;
+                padding: 15px 0;
+                background-color: #524e3c;}
+
+                .fa-database {background-color:#bfbd13 ;}
+                .fa-bar-chart {background-color: #c58839;}
+                .fa-clock-o {background-color: #859f46;}
+
+/* 위아래 여백설정 */
+
+.boxA {padding-top: 20px;
+        padding-bottom: 10px;}
+
+.box4 {padding-top: 20px;
+        padding-bottom: 10px;}
+.news {margin-bottom: 10px;}
+
+.box6 {padding-top: 20px;}
+.box6>div {padding-bottom: 10px;}
+
+
+/* 박스6 세부설정 */
+
+
+
+
+
+
+
+
+
+/* 좌우여백 설정 */
+
+.boxA, .box5, .box4 {padding-left: 15px;
+                    padding-right: 15px;}
+
+
+
+
+
+
+#btn {background-color: #fff;
+        border-radius: 5px;
+position: absolute;
+padding: 6px 12px;
+border:  solid 1px #aaa;
+right: 15px;
+top: 20px;
+cursor: pointer;
+}
+
+
+
+#btn i {font-size: 18px;
+        color: #888;}
+
+#btn span {
+        display: inline-block;
+        text-indent: -9999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어커리구간####################################################################### */
+
+
+/* 599px 이하일떄 설정 */
+
+@media(max-width:599px){
+
+
+/*  
+        .boxA {display: flex;
+        }
+
+.boxA>div {width: 50%;}
+*/
+
+
+
+
+
+
+}
+
+
+
+
+/* 767px 이하 */
+@media(max-width:767px){
+
+
+        .box2.on {border-top: 1px solid #000;
+                padding-bottom: 10px;}
+
+        #menu {display: none;}
+
+        .gnb ul {flex-direction: column;
+                        width: 100%;}
+        .gnb li {width: 100%;}
+        .gnb ul a {border: 1px solid #ddd;
+
+        }
+
+} 
+
+/* 768px */
+
+@media (min-width:768px){
+
+
+
+.boxA {display: flex;
+        }
+
+.boxA>div {width: 50%;}
+/* 박스4 */
+        .box4 {display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;}
+
+
+
+                .news {width: 68%;
+                        margin-right: 2%;
+                        /*  
+                        padding-right: 35px;
+                        box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -webkit-box-sizing: border-box;*/}
+
+
+
+
+                .sns {width: 30%;
+                        }
+
+
+
+                        .box6 {display: flex;
+                                justify-content: space-between;}
+                                
+                                .box6>div {width: 32%;}
+
+/* 레이아웃설정 */
+
+
+/* 박스1과 박스2의 가로정렬 */
+
+
+/* after 정렬방식 
+
+.box1 {float: left;
+        width: 50%;}
+
+.box2 {float: left;
+    width: 50%;}
+
+.boxA {content: "";
+        display: block;
+        clear: both;}*/
+
+
+/* flex정렬 */
+
+#btn{display: none;}
+
+}
+
+
+/* 1280px 이상일때 */
+
+@media(min-width:1290px){
+
+
+.boxA, .box4, .box3, .copyright, .box6 {width: 1280px;
+                margin: 0 auto;}
+
+
+}

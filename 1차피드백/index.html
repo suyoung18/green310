@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트1_NASA</title>
+
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="style.css">
+<!-- 외부스크립트연결 -->
+<script src="js/js.js"></script>
+
+<!-- 폰트어썸 CDN -->
+<script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
+
+<!-- 제이궈리연결 -->
+<Script src="js/jquery-3.7.1.min.js"></Script>
+
+<!-- 자바스트립트 -->
+        <script>
+            $(function(){
+                $('.ex1').children('li').not('.li02').css({'border-right':'2px solid #747474'});
+                
+                // 클릭한 나자신에게 색깔변경
+            $('.btn').children('li').click(function(){
+
+            // 실행문
+            $('.btn').children('li').removeClass('yo')
+            $(this).addClass('yo')
+            });
+                
+            $('.aww').children('li').not('.arr').css({'border-bottom':'1px solid #000'});
+            
+            
+
+
+
+            // titleBox 의 li의 순번찾기
+            $('.titleBox li').click(function(){
+
+            // 클릭한나 자신의 순번을 변수로 지정하기
+
+            var i = $(this).index()
+            // 콘솔에 확인하기
+            console.log(i)
+            // 찾아낸순번을 listBox안의 div의 순서에 맞게 보이기
+            $('.box3-2>div').css({'display':'none'})
+            $('.box3-2>div').eq(i).css({'display':'block'})
+
+            $('.titleBox li').removeClass('on')
+
+            // 클릭한 나자신에게 클래스'on 값 더하기
+            $(this).addClass('on')
+            });
+
+            
+
+
+            $('.left').children('i').click(function(){
+
+// 실행문
+$('.listBox1').children('ul').css({'left':'-416px'})
+
+})
+
+
+
+$('.right').children('i').click(function(){
+
+// 실행문
+$('.listBox1').children('ul').css({'left':'416px'})
+});
+            
+
+            })
+
+
+
+
+        </script>
+<!--
+$('.left').children('i').click(function(){
+
+// 실행문
+$('.listBox1').children('ul').css({'left':'-416px'})
+
+});
+
+
+
+$('.right').children('i').click(function(){
+
+// 실행문
+$('.listBox1').children('ul').css({'right':'416px'})
+
+}); -->
+
+</head>
+<body>
+    <header class="box1">
+        <div class="box1-1">
+            <div class="util">서브메뉴
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-caret-down fa-stack-1x"></i>
+                    <i class="fa fa-circle-thin fa-stack-1x"></i>
+                </span>
+            </div>
+
+            <div class="logo">
+                <img src="img/logo1.png" alt="" width="280" height="60">
+            </div>
+
+            <div class="search">
+                <p>검색하기....</p>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="box1-2">
+            <nav>
+                <ul class="ex1">
+                    <li><a href="#">NASA소개</a></li>
+                    <li><a href="#">NASA뉴스</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">임무</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">참여마당</a></li>
+                    <li class="li02"><a href="#">학습하기</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+
+    </header>
+
+
+
+    <div class="box2">
+        <div class="slide">
+            <strong>허블, 10억초 돌파</strong>
+            <p>허블은 1990년 4월 25일 우주 왕복선 디스커버리 호의 화물칸에서 배치되었으며... </p>
+            
+        </div>
+
+
+        <div class="slide1">
+            <div class="btn1">
+                <a href="#">
+                            <i class="fa fa-pause" aria-hidden="true"></i>
+                        </a>
+            </div>
+            <ul class="btn">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li class="yo"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+        </div>
+        <!-- 자바스트립트
+        <script>
+            $(function(){
+                $('.btn').eq(0).css({'justify-content':'flex-start'})
+            })
+        </script> -->
+
+    </div>
+
+
+
+    <div class="boox">
+        <div class="box3">
+            <div class="box3-1">
+                <div class="titleBox">
+                    <ul>
+                        <li class="on">공지사항</li>
+                        <li>주요뉴스</li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <div class="box3-2">
+                <div class="listBox">
+                <ul class="aww"> 
+                    <li>
+                        <p>재무 보고서</p> 
+                        <p>NASA의 연간 재무 보고서</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li>
+                        <p>2024예산요청</p>
+                        <p>2024 회계연도 예산 요청</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li>
+                        <p>이전 예산 요청</p>
+                        <p>2003 회계연도 예산 요청</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li>
+                        <p>성적증명서 요청</p>
+                        <p>2023년보고서 및 성적증명서</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li class="arr">
+                        <p>2023 예산요청</p>
+                        <p>2023년보고서 및 성적증명서</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+                </ul>
+                
+            </div>
+    
+            
+    
+    
+            <div class="listBox">
+                <ul class="aww"> 
+                    <li>
+                        <p>재무 보고서4142</p> 
+                        <p>NASA의 연간 재무 보고서</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li>
+                        <p>2024예산요청</p>
+                        <p>2024 회계연도 예산 요청</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li>
+                        <p>이전 예산 요청</p>
+                        <p>2003 회계연도 예산 요청</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li>
+                        <p>성적증명서 요청</p>
+                        <p>2023년보고서 및 성적증명서</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+    
+                    <li class="arr">
+                        <p>2023 예산요청</p>
+                        <p>2023년보고서 및 성적증명서</p>
+                        <p>YYYY.MM.DD</p>
+                    </li>
+                </ul>
+            </div>
+        
+            </div>
+        </div>
+    
+    
+    
+    
+            <div class="txtBoxs">
+                <h2>NASA 본사 견학 예약</h2>
+                <div class="mop">
+                    <ul class="mop1">
+                        <li>단체예약</li>
+                        <li>개별예약</li>
+                        <li>오시는 길</li>
+                        <li>주차정보</li>
+                        <li>매장및서비스 </li>
+                    </ul>
+        
+                    <div class="toTep">
+                        <div class="toto">
+                            <form action="#">
+                                <div class="name">
+                                    <label for="name">신청자 :</label>
+                                    <input type="text" id="name" placeholder="이름을 기입해주세요" autofocus>
+                                </div>
+                    
+
+
+
+    <div class="people">
+                    <label for="people">인원 :</label>
+                    <select name="people" id="people">
+                        <option value="1">1명</option>
+                        <option value="2">2명</option>
+                        <option value="3">3명</option>
+                        <option value="4">4명</option>
+                        <option value="5">5명</option>
+                        <option value="6">6명</option>
+                        <option value="7">7명</option>
+                        <option value="8">8명</option>
+                        <option value="9">9명</option>
+                        <option value="10">10명</option>
+                        <option value="11">11명</option>
+                        <option value="12">12명</option>
+                        <option value="13">13명</option>
+                        <option value="14">14명</option>
+                </select>
+
+            <button type="button">예약하기</button>
+
+            </div>
+                            </form>
+                        </div>
+
+
+
+
+
+                        <form class="eto">
+                            <div class="date">
+                                <label for="date">날짜 :</label>
+                                <input type="text" id="date" placeholder="날짜를 선택해주세요" >
+                    
+                                <div class="cal001">
+                        <h2>2023년 11월</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                            </thead>
+                    
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                    
+                    
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                            </tbody>
+                    
+                    
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                </tr>
+                            </tbody>
+                    
+                            <tbody>
+                                <tr>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                    
+                    
+                            <tbody>
+                                <tr>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                    </div>
+                            </div>
+                        </form>
+
+        
+                        <ul class="tep1">
+                            <li>대상 : 개인 및 14인 이하 소규모 단체(초등 4학년 이상)</li>
+                            <li>시간 : 월요일 – 금요일, 오전 8시 30분 – 오후 4시 30분</li>
+                            <li>
+                                NASA 본부 도서관에 대해 자세히 알아보기
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+    
+    </div>
+
+
+
+
+
+    <div class="box4">
+        
+        <div class="title">
+            <h2>오늘의이미지</h2>
+        </div>
+    
+        <div class="listBox1">
+            <ul>
+                <li>
+                    <img src="img/box4-1.png" alt="" width="414" height="292">
+                    <p>허블 우주 망원경이 촬영한 이 이미지를 
+                        가로지르는 해파리 은하 JO206의 모습입니다.</p>
+                </li>
+
+                <li>
+                    <img src="img/box4-2.png" alt="" width="414" height="292">
+                    <p>NASA의 Wallops에서 울리는 로켓을 타고 학생 
+                        실험이 비행합니다.</p>
+                </li>
+                
+                <li>
+                    <img src="img/box4-3.jpg" alt="" width="414" height="292">
+                    <p>미래의 Artemis 임무를 위한 NASA Orion 승무원 
+                        모듈을 위한 세 가지 환호</p>
+                </li>
+                <li>
+                    <img src="img/box4-1.png" alt="" width="414" height="292">
+                    <p>허블 우주 망원경이 촬영한 이 이미지를 
+                        가로지르는 해파리 은하 JO206의 모습입니다.</p>
+                </li>
+
+                <li>
+                    <img src="img/box4-2.png" alt="" width="414" height="292">
+                    <p>NASA의 Wallops에서 울리는 로켓을 타고 학생 
+                        실험이 비행합니다.</p>
+                </li>
+                
+                <li>
+                    <img src="img/box4-3.jpg" alt="" width="414" height="292">
+                    <p>미래의 Artemis 임무를 위한 NASA Orion 승무원 
+                        모듈을 위한 세 가지 환호</p>
+                </li>
+            </ul>
+        </div>
+    
+            <span class="left" onclick="prev()" >
+                <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+            </span>
+    
+            <span class="right" onclick="next()">
+                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+            </span>
+  
+    </div>
+
+
+    <!--  
+    <div class="box5">
+        <div class="title"></div>
+
+        <div class="txtList">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="imgBox">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="localMenu">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>-->
+
+
+    <div class="box6">
+       <div class="box6-1">
+           <p>NASA 소개</p>
+           <p>NASA는 항공과 우주에서 미지의 세계를...</p>
+           <p>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            더 알아보기</p>
+       </div>
+    </div>
+
+
+
+    <div class="box7">
+        <div class="title">
+            <h2>갤러리</h2>
+            <p>
+                <span>more</span>
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                
+            </p>
+        </div>
+        <div class="wee">
+            <ul class="img">
+                <li class="img2"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="box8">
+        <div class="big1">
+            <h2>오시는 길</h2>
+        </div>
+
+
+        <div class="big">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.789183787223!2d-77.01885352406389!3d38.883064871727115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b77f50ae6f01%3A0x676e7adc4032899b!2sNASA!5e0!3m2!1sko!2skr!4v1700036852817!5m2!1sko!2skr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="txtBox">
+                <h2>NASA 본사 견학</h2>
+                <div class="txt1">
+                    <ul class="menu">
+                        <li>NASA FCU</li>
+                        <li>NASA 도서관</li>
+                        <li>회의 공간</li>
+                        <li>건강센터</li>
+                    </ul>
+        
+                    <ul class="txt">
+                        <li>NASA 도서관</li>
+                        <li>
+                            <p>월요일 – 금요일, 오전 8시 30분 – 오후 4시 30분</p>
+                            <p>연구 지원이나 일반적인 문의 사항은 202-358-0168 또는 library@hq.nasa.gov로 사서에게 문의하십시오.</p>
+                            <p>POC: Rebecca Bythewood, 시설 관리자, 지원 서비스 부서</p>
+                        </li>
+                        <li>NASA 본부 도서관에 대해 자세히 알아보기
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+    
+        </div>
+        <div class="boxtxt">
+            
+            <ul class="moo1">
+                <strong>NASA 본부</strong>
+                <li>
+                    <P>주소 :</P>
+                    <p>300 E St SW, Washington, DC 20546 미국</p>
+                </li>
+
+                <li>
+                    <p>연락처 :</p>
+                    <p>워싱턴 DC 20546-0001 (202) 358-0000</p>
+                </li>
+            </ul>
+
+
+            
+            <ul class="moo2">
+                <strong>본부 정보 센터</strong>
+                <li>
+                    <P>연락처 :</P>
+                    <P>(202) 358-0000</P>
+                </li>
+                
+                <li>
+                    <p>이메일 :</p>
+                    <p>info-center@hq.nasa.gov </p>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+
+    <div class="box9">
+            <div class="logo1">
+                <img src="img/toplogo.png" alt="">
+            </div>
+
+        <footer>
+            
+            <ul class="nasa">
+                <li>미국 항공 우주국</li>
+                <li>NASA는 항공과 우주에서 미지의 세계를 탐험하고 인류의 이익을 위해 혁신하며 발견을 통해 세상에 영감을 줍니다.</li>
+                <li>우리와 함께하세요
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                </li>
+            </ul>
+
+            <ul class="menu1">
+                <li>
+                    <p>사이트맵</p>
+                    <p>개인 정보 정책</p>
+                    <p>공포금지법</p>
+                </li>
+                <li>
+                    <p>미디어용</p>
+                    <p>예산 및 연간 보고서</p>
+                    <p>NASA 문의</p>
+                </li>
+            </ul>
+
+            <ul class="sns">
+                <li>NASA 팔로우</li>
+                <li>
+                    <p><a href="#">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a></p>
+
+                    <p><a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a></p>
+
+                    <p><a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a></p>
+
+                    <p><a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></p>
+                </li>
+                <li>더 많은 NASA 소셜 계정</li>
+                <li>NASA 뉴스레터</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

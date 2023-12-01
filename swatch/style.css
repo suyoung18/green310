@@ -1,0 +1,199 @@
+/* 언어설정 */
+
+@charset 'UTF-8';
+
+/* 리셋 */
+
+*{margin: 0;
+    padding: 0;}
+
+ul, ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+
+
+
+
+
+
+/* 로고 */
+
+h1 {
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* gnd설정 */
+
+
+.gnb {
+    position: fixed;
+    top: 50%;
+    margin-top: -120px;
+    left: 0;
+    z-index: 99;
+
+
+}
+
+.gnb li {
+    height: 60px;
+    width: 200px;
+    text-align: right;
+    border-top: 2px solid #000;
+}
+
+.gnb li:hover {
+    font-weight: bold;
+}
+
+.gnb li:nth-child(1):hover {
+    color: #d4164c;
+    border-color: #d4164c;
+}
+
+.gnb li:nth-child(2):hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.gnb li:nth-child(3):hover {
+    color: #ffec6a;
+    border-color: #ffec6a;
+}
+
+
+.gnb li:nth-child(4):hover {
+    color: #005a89;
+    border-color: #005a89;
+}
+
+
+
+
+.gnb li.on {
+    font-weight: bold;
+}
+
+.gnb li:nth-child(1).on {
+    color: #d4164c;
+    border-color: #d4164c;
+}
+
+.gnb li:nth-child(2).on {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.gnb li:nth-child(3).on {
+    color: #ffec6a;
+    border-color: #ffec6a;
+}
+
+
+.gnb li:nth-child(4).on {
+    color: #005a89;
+    border-color: #005a89;
+}
+
+/* wrap설정 */
+
+#wrap {
+    width: 100%;
+}
+
+#wrap section {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+#wrap section:nth-child(1) {
+    background-image: url(img/bg1.jpg);
+}
+
+#wrap section:nth-child(2) {
+    background-image: url(img/bg2.jpg);
+}
+
+#wrap section:nth-child(3) {
+    background-image: url(img/bg3.jpg);
+}
+
+#wrap section:nth-child(4) {
+    background-image: url(img/bg4.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+/* 박스이미지설정 */
+
+
+section img {
+    position: absolute;
+}
+
+
+/* 첫박스설정 */
+
+.j11 {right: 20px;
+        bottom: 20px;}
+.j12  {right: 130px;
+        bottom: -40px;}
+.j13  {right: 60px;
+        bottom: 180px;
+}
+
+
+
+.j21 {right: -180px;
+    bottom: -480px;}
+.j22 {right: 130px;
+    bottom: -40px;}
+
+
+.j31 {right: 180px;
+    bottom: 30px;}
+.j32 {right: 110px;
+    bottom: -270px;}
+.j33 {right: -70px;
+    bottom: -130px;}
+
+
+.j41 {right: 20px;
+    bottom: -120px;}
+.j42 {right: 0px;
+    bottom: -180px;}
+
+
+
+
+

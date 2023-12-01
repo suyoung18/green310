@@ -1,0 +1,395 @@
+/* 언어 */
+@charset 'UTF-8';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* 리셋 */
+
+* {
+    margin: 0;
+    padding: 0;}
+
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+body {background-color: #000;
+    color: #fff;}
+
+div {
+    overflow: hidden;
+}
+
+h2 {font-size: 36px;}
+
+/* 박스1 설정 */
+
+.box1 {
+    position: relative;
+    height: 80vh;
+    background-color: #000;
+}
+.vid {position: absolute;
+        left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.6;
+    width: 100%;
+    
+    
+    
+    
+    }
+
+
+.vid video {width: 100%;
+    height: auto;
+    min-width: 1280px;
+}
+
+
+.box1-1 {
+    display: flex ;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+.box1-1 h1 {
+    background-image: url();
+}
+
+.navi {
+    display: flex;
+}
+
+.navi li {}
+
+.navi a { 
+    display: block;
+    padding: 10px;
+} 
+/* 대부분 a에서 패딩과 마진을 사용함 */
+
+.box1-2 {
+    height: calc(100% - 120px);
+    text-align: right;
+    justify-content: flex-end;
+    
+    align-items: flex-end;
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+
+
+
+
+
+
+
+/* 박스2 설정 */
+
+.box2 {
+    display: flex;
+    height: 50vh;
+
+    }
+
+.box2>div {
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.box2-1 {
+    padding: 30px 20px;
+}
+
+.box2-1 h2 {
+    margin-bottom: 20px;
+    text-align: right;
+    width: 80%;
+}
+
+.box2-1 p {
+    width: 80%;
+    text-align: right;
+
+}
+
+.box2-2 {
+    height: 100%;
+    background-color: #777;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.box2-2 p {
+    width: 20%;
+    height: 80%;
+    background-color: firebrick;
+    overflow: hidden;
+}
+
+.box2-2 img {
+    
+    
+    width: auto;
+    height: 100%;
+    transform: translateX(-20%);
+}
+
+
+/* 박스3 설정 */
+
+.box3 {
+    background-image:  url(https://www.nasa.gov/wp-content/uploads/2023/11/s72-31047.jpg?resize=2000,1321);
+    background-color: #aaa;
+    padding: 20px;
+    text-align: center; 
+    height: 300px;   
+}
+
+.box3 h2 {
+    margin-bottom: 10px;
+}
+
+.box3 p {
+    margin-bottom: 50px;
+}
+
+.box3>div {}
+
+
+/* 박스4 설정 */
+
+.box4 {
+    display: flex;
+    height: 250px;
+}
+
+.box4 .box4-1 {width: 40%;}
+
+.box4 .box4-2 {width: 60%;}
+
+.box4>div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.box4-2 {
+    padding: 30px 20px;
+}
+
+.box4-2 h2 {
+    margin-bottom: 20px;
+}
+
+.box4-2 p {
+    width: 60%;
+}
+
+.box4-1 {
+    height: 100%;
+    background-color: #777;
+    display: flex;
+}
+
+.box4-1 p {
+    background-color: palegreen;
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: auto 100%;
+    transition: all 0.8s;
+}
+
+.box4-1 p:nth-child(1) {
+    background-image: url(https://www.nasa.gov/wp-content/uploads/2023/10/webb-stsci-01hbbmj8r6htxp5w1evej24d64.jpg);
+}
+
+.box4-1 p:nth-child(2) {
+    background-image: url(https://www.nasa.gov/wp-content/uploads/2023/10/pia25709orig.jpg);
+}
+.box4-1 p:nth-child(3) {
+    background-image: url(https://www.nasa.gov/wp-content/uploads/2023/08/gateway_summer_req_images_rev2_11orig.png);
+}
+.box4-1 p:nth-child(4) {
+    background-image:  url(https://www.nasa.gov/wp-content/uploads/2023/08/ksc-20230718-ph-ilw01_0234orig.jpg);
+}
+.box4-1 p:nth-child(5) {
+    background-image: url(https://www.nasa.gov/wp-content/uploads/2023/08/ksc-20230826-ph-kls03_0119orig.jpg);
+}
+
+.box4-1 span {display: block;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.6);
+text-align: center;
+padding: 10px 0;
+transform: translateY(200px);
+transition: all 0.5s;
+
+
+
+}
+
+.box4 p:hover { background-size: auto 120%;}
+
+.box4 p:hover span {transform: translateY(0);}
+
+
+
+/* 박스5 설정 */
+
+.box5 {
+    
+    padding: 20px;
+    text-align: center;    
+    position: relative;
+    height: 250px;
+}
+
+.box5 h2 {
+    margin-bottom: 10px;
+}
+
+.box5 p {
+    margin-bottom: 50px;
+}
+
+.box5 img {position:  absolute;
+left: 0;
+top: 0;
+z-index: -1;
+animation: ani 10s linear infinite alternate;
+}
+
+
+/* 애니메이션 */
+
+@keyframes ani {
+
+    0% {left: 0;}
+    100% {left: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.box5>div {}
+
+/* 박스6 설정 */
+
+.box6 {
+    display: flex;
+    height: 250px;
+    background-color: #333;
+    }
+
+.box6 .box6-1 {width:60% ;}
+
+.box6 .box6-2 {width: 40%;}
+
+.box6>div {
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.box6-1 {
+    padding: 30px 20px;
+}
+
+.box6-1 h2 {
+    margin-bottom: 20px;
+}
+
+.box6-1 p {
+    width: 60%;
+}
+
+.box6-2 {
+    height: 100%;
+    background-color: #777;
+}
+
+.box6 iframe {width: 100%;
+    height: 100%;}
+
+/* 박스7 설정 */
+
+.box7 {
+    background-color: #000;
+        color: #fff;
+        padding: 20px;
+    }
+
+.box7-1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box7-1 h2 {
+    margin-bottom: 10px;
+}
+
+.box7-1>div {}
+
+
+.box7-2 {}
+
+.box7-2>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box7-2>ul>li {}
+
+.box7-2 a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+
+

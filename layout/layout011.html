@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃11</title>
+    <!-- 외부스크립트연결 -->
+    <link rel="stylesheet" href="layout011.css">
+    <!-- 그리드가이드연결 -->
+
+    <link rel="stylesheet" href="gird-guide.css">
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/5259710eda.js" crossorigin="anonymous"></script>
+</head>
+<body class="fa-spin1">
+    <header class="box1">
+
+        <div class="box1-1">
+            <h1><a href="#"><img src="img/logo.png" alt="" width="70" height="70"></a>
+        </div>
+        <div class="box1-2">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="box2">
+            <div class="box2-1">
+               <p> <img src="https://www.fnnews.com/resource/media/image/2017/02/07/201702071519255801_l.jpg" alt="" width="160" height="160" ></p>
+                <!--동그라미모양만들고 사진넣기-->
+            </div>
+            <div class="box2-2">
+                <strong>TITLE</strong>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nihil unde ad quo facilis porro culpa neque maiores fuga iure ex, amet, aliquid velit, illo voluptatem dolor pariatur nemo voluptates?</p>
+            <div class="snsSet">
+                <ul>
+                    <li><a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a></li>
+
+                    
+                    <li><a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a></li>
+
+
+                    <li><a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
+                <!-- 각SNS는 아이콘으로 넣고 동그라미모양안에 넣는다. 
+                마우스오버시 아이콘이 위쪽으로 자연스럽게이동한다.-->
+
+            </div>
+            </div>
+
+        </section>
+        <section class="box3">
+            <div class="box3-1">
+                <h2>그대들은 어떻게 살 것인가</h2>
+                <ul>
+                    <li>
+                        <img src="http://www.jisadong.com/data/file/guest/1794604220_GFD0MsHo_8.jpg" alt="" width="400" height="250">
+                        <div class="txtBox">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem</div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8OMpEeMf59Vy5ek9oY8Wgv9vXjzFHV_lIVA&usqp=CAU" alt="" width="400" height="250">
+                        <div class="txtBox">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem</div>
+                    </li>
+                    <li>
+                        <img src="https://res.heraldm.com/content/image/2016/04/27/20160427001247_0.jpg" alt="" width="400" height="250">
+                        <div class="txtBox">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem</div>
+                    </li>
+                    <li>
+                        <img src="https://t1.daumcdn.net/cfile/tistory/99F5213B5A6A073C26" alt="" width="400" height="250">
+                        <div class="txtBox">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem</div>
+                    </li>
+
+                    <!-- li에 사이즈값을 모두부여하고 txtBox 를 포지션으로 이동해서 
+                    li아래부분에 안보이게 배치해놓음 
+                li가 기준이 꼭 되게 만들어놓고 img와 txtBox의 Z-index를 사용 -->
+                </ul>
+            </div>
+            <div class="box3-2">
+                <h2>김 타이틀</h2>
+                <ul class="icon">
+                    <li>
+                        <i class="fa fa-deaf fa-spin" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-optin-monster fa-spin" aria-hidden="true" ></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-hand-spock-o fa-spin" aria-hidden="true"></i>
+                    </li>
+                </ul>
+
+                <!-- 마우스hover 시 동그라미내부에 백그라운드컬러를 넣고 아이콘의 
+                색은 변경되게 설정 -->
+            </div>
+            <div class="left">
+                <a href="#">
+                    <i class="fa fa-thumbs-o-up fa-rotate-270" aria-hidden="true"></i>
+                </a>
+            </div>
+
+
+            <div class="right">
+                <a href="#">
+                    <i class="fa fa-thumbs-o-up fa-rotate-90" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="box4">
+            <div class="box4-1">
+                <h2>TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sequi temporibus fuga laudantium facere eaque, quae esse possimus error vero maxime officiis consequatur dolorum delectus! A asperiores dolore consequatur veniam!</p>
+            </div>
+            <div class="box4-2">
+                <form action="#">
+                    <input type="text" class="form_title" >
+                    <input type="text" class="Email" >
+                    <textarea class="memo"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="copyright">
+        <p>copyright &copy; 2023.green. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>

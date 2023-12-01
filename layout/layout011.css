@@ -1,0 +1,319 @@
+/* 언어설정 */
+
+
+@charset 'UTF-8';
+
+/* 리셋 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+
+/* 박스1 */
+
+.box1 {
+    background-color: bisque;
+}
+
+.box1-1 {
+    margin-left: 50px;
+}
+
+.gnb {
+    margin-right: 50px;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items:center;}
+.gnb ul {display: flex;
+        justify-content: flex-end;
+    align-items: flex-end;
+    }
+.gnb ul li {}
+.gnb a {display: block;
+padding:10px 15px;
+font-size: 14px;}
+.gnb a:hover {background-color: #eee;}
+
+
+
+/* 박스2 */
+
+.box2 {
+    width: 80%;
+    height: 450px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2-1 img {
+    margin: 0 30px 120px 0px;
+    border-radius: 50%;
+}
+
+.box2-2 {
+    width: 60%;
+}
+
+.box2-2 strong {
+    font-size: 48px;
+}
+
+.box2-2 p {
+    margin-top: 40px;
+    font-size: 24px;
+    
+}
+
+.snsSet {
+    
+}
+
+.snsSet ul {
+    display: flex;
+    margin-top: 50px;
+}
+
+.snsSet li {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 30px 0 0;
+    background-color: aquamarine;
+}
+
+.snsSet li:hover i {
+    margin-bottom: 110px;
+    transition: all 0.4s;
+}
+
+.snsSet li a {
+    
+
+}
+
+.snsSet i {
+    
+    font-size: 40px;
+}
+
+
+/* 박스3 */
+
+.box3 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.box3 h2 {
+    border: 1px solid paleturquoise;
+    border-radius: 50px;
+    background-color: paleturquoise;
+    text-align: center;
+    margin-left: 40%;
+    width: 20%;
+}
+
+.box3-1 ul {display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+
+.box3-1 li {
+    width: 40%;
+    margin: 20px;
+    z-index: 10;
+
+}
+
+/*  */
+.box3-1 li:nth-child(1) {
+    margin-left: 200px;
+}
+.box3-1 li:nth-child(2) {
+    margin-left: 50px;
+}
+.box3-1 li:nth-child(3) {
+    margin-left: 200px;
+}
+.box3-1 li:nth-child(4) {
+    margin-left: 50px;
+}
+
+    .box3-1 .txtBox {
+        display: none;
+        z-index: 1;
+    }
+
+    .box3-1 .txtBox:hover {
+        display: block;
+        z-index: 10;
+    }
+
+
+.box3-2 ul {
+    display: flex;
+}
+
+.box3-2 li {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: orangered;
+    margin: 40px;
+    font-size: 40px;
+}
+
+.box3-2 li:hover {
+    background-color: darkred;
+}
+
+.box3 .left {
+    
+    position: absolute;
+    top: 85%;
+    font-size: 40px;
+    left: 0;
+    background-color: pink;
+    margin-left: 50px;
+}
+
+.box3 .right {
+    position: absolute;
+    top: 85%;
+    font-size: 40px;
+    right: 0;
+    background-color: pink;
+    margin-right: 50px;
+}
+
+
+.box4 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box4-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box4-1 h2 {
+    border: 1px solid paleturquoise;
+    border-radius: 50px;
+    background-color: paleturquoise;
+    text-align: center;
+    padding:   0 10px 0 10px;
+    font-size: 32px;
+}
+
+.box4-1 p {
+    margin-top: 40px;
+    font-size: 19px;
+    width: 40%;
+}
+
+.box4-2 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+    height: 100%;
+    
+}
+
+
+
+.box4-2 form input {
+    margin-top: 20px;
+    width: 400px;
+    height: 30px;
+}
+
+.box4-2 form input:nth-child(4) {
+    width: 100px;
+
+}
+
+.box4-2 .memo {
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 40px;
+    background-color: #888;
+    height: 50px;
+    width: 100%;
+}
+
+
+/* 태블릿 768px 이상구간*/
+
+
+@media(min-width:768px){
+
+
+    .box1 {display: flex;}
+    .box1>div {width: 50%;}
+
+    
+    
+
+}
+
+
+
+
+
+/* 1290px이상일때  */
+@media(min-width:1290px){
+
+    .box2, .box3 ,.box4 ,.box6 {width: 80%;
+            margin: 0 auto;}
+
+
+}

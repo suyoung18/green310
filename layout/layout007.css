@@ -1,0 +1,241 @@
+/* 언어 */
+@charset 'UTF-8';
+
+/* 리셋 */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {text-decoration: none;
+    color: #000;}
+
+ol, ul {list-style: none;}
+
+img {vertical-align: bottom;
+    border: none;}
+
+    
+
+
+/* 박스1 */
+
+
+
+.box1>div {display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    background-color: aquamarine;
+}
+
+.box1 p {display: block;
+    border: 1px solid aqua;
+    background-color: aqua;
+    margin: 10px;
+    }
+
+
+
+/* 박스2 */
+
+.box2 {display: flex;
+        justify-content: space-around;
+    align-items: center;
+    }
+
+.box2 .logo  {display: flex;
+
+                }
+.box2 i {color: brown;}
+
+.box2 p {
+    display: block;
+    border: 1px solid brown;
+    background-color: brown;
+    height: 20px;
+    
+
+}
+.box2 ul {
+    display: flex;
+    border: 1px solid aqua;
+    background-color: aqua;
+    margin: 10px;
+}
+
+.box2 li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+/* 박스3 */
+
+.box3 {
+    width: 100%;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.box3>div {
+    padding-top: 100px;
+    background-color: aquamarine;
+    text-align: left;
+    padding-left: 120px;
+    
+}
+
+.box3 h2 {margin-bottom: 50px;
+            border-bottom: 3px solid darkred;
+        font-size: 32px;
+        }
+
+.box3 p {font-size: 18px;
+        margin-bottom: 40px;}
+
+
+
+
+
+
+
+
+
+/* 박스4 */
+
+.box4 {
+    width: 100%;
+    
+    display: flex;
+    height: 300px;
+    justify-content: space-between;}
+
+
+
+
+.box4>div {
+    
+    padding: 10px 10px;
+    
+    bottom: 0;}
+
+
+.box4 .icon {display: flex;
+    justify-content: space-between;                
+align-items: center;
+
+padding-top: 30px;
+
+
+}
+
+
+.box4 .icon p {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.box4 h2 {
+background-color: darkgrey;
+font-size: 30px;
+}
+
+
+.box4 i {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.box4 p {
+    
+    font-size: 18px;
+}
+
+
+.box4-1 {background-color: greenyellow;}
+
+.box4-2 {background-color: yellowgreen;}
+
+.box4-3 {background-color: chartreuse;}
+
+.box4-4 {background-color: green;}
+
+
+
+
+
+/* 박스5 */
+
+.box5 {
+    
+    
+}
+
+
+.box5-1 {background-color: coral;}
+.box5-2 {background-color: chocolate;}
+.box5-3 {background-color: burlywood;}
+
+
+.box5>div {
+    
+    width: 100%;
+    height: 300px;
+}
+
+.box5 h2 {
+    font-size: 40px;
+}
+
+
+.box5>div {display: flex;}
+
+.box5>div>div {width: 50%;}
+
+.box5 .img {width: 200px;
+    height: 150px;
+    background-color: paleturquoise;
+    margin-top: 100px;
+    margin-left: 34.5%;
+}
+
+.box5 p {}
+
+
+
+
+/* 박스6 */
+
+
+
+/* 박스7 */
+
+
+
+
+
+
+
+
+/* 미디어쿼리 */
+
+    /* 1290px 이상구간설정 */
+    @media(min-width:1290px){
+
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+    
+            width: 1280px;
+            margin: 0 auto;
+        }
+    
+    
+    }
+
+
+

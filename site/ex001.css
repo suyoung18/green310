@@ -1,0 +1,175 @@
+/* 언어설정 */
+
+@charset 'UTF-8';
+
+/* 리셋 */
+
+* {margin: 0;
+    padding: 0;}
+
+ul, ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+
+
+/* boxa 정렬 */
+
+.boxa {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.box1 {float: left;
+    width: 50%;}
+
+
+.box1 h1 {font-size: 30px;}
+
+/* 네비 */
+
+.cer {display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    
+height: 100%;
+}
+
+
+
+.cer ul {display: flex;
+    
+    justify-content: flex-end;
+                align-items: flex-end;}
+
+.cer ul li {
+    display: block;
+    padding: 10px 15px;
+                font-size: 14px;
+                }
+
+.box2 ul li:hover {background-color: #eee;
+}
+
+/* 박스3 */
+
+.Big {width: 100%;}
+
+
+
+
+
+/* 공지사항 */
+
+
+.box4 {display: flex;}
+
+.aoo {
+        box-sizing: border-box;
+        border: 5px solid #ddd;
+        padding: 20px;}
+
+.aoo p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.aoo ul {
+    
+}
+
+.aoo ul li {
+    border-bottom: 1px dotted #ddd ;
+    padding: 5px;
+}
+
+.aoo a {}
+
+.sns {}
+
+
+/* 미디어커리 */
+
+
+
+
+/* 599px 이하 */
+@media(max-width:599px){
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* 767px 이하 */
+
+@media(max-width:767px){
+
+
+
+
+
+
+}
+
+
+
+/* 768px 이상 */
+
+@media(min-width:768px){
+
+
+
+
+.boxa {display: flex;}
+.boxa>div {width: 50%;}
+
+
+
+.box4 {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;}
+
+
+.aoo {width: 70%;}
+.sns {width: 30%;}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* 1280px 이상 */
+@media(min-width:1290px){
+
+.box1, .Big, .box2, .box3, .box4, .boxa, .caa, .box6 {margin: 0 auto;
+        width:1280px;}
+
+
+}
+
+
+

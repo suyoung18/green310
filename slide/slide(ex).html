@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드예제 </title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        * {margin: 0;
+            padding: 0;}
+        .box1 {width: 280px;
+                height: 390px;
+            border: 3px solid #000;
+            margin: 0 auto;
+            overflow: hidden;
+         
+        }
+        .box1 ul{list-style: none;
+          
+            position: relative;
+        }
+        .box1 li {position: absolute;
+        left: 100%;
+    opacity: 0.8;}
+
+        .box1 li:nth-child(1) {left: 0;}
+
+        h1 {position: fixed;
+        left: 20px;
+        top: 20px;}
+
+
+
+        .box2 {width: 100%;
+        height:500px;
+    margin: 0 auto;
+overflow: hidden;}
+    .box2 ul {list-style: none;
+            width: 100%;
+        height: 100%;
+    background-color: red;
+position: relative;}
+.box2 li {position: absolute;
+left: -100%;
+top: 0;
+width: 100%;
+height: 100%;
+background-position: center center;
+background-size: cover;}
+.box2 li:nth-child(1) {background-image: url(img/0.png);}
+.box2 li:nth-child(2) {background-image: url(img/1.png);}
+.box2 li:nth-child(3) {background-image: url(img/2.png);}
+.box2 li:nth-child(1) {left: 0;}
+
+section {text-align: center;
+height: 100vh;
+font-size: 60px;}
+    </style>
+
+    <script>
+        $(function(){
+
+           
+            // 0부터2까지의 숫자를 무한반복해라.
+
+            // 시작변수지정하기
+            var a =0;
+
+            setInterval(function(){
+                a++;
+                if(a==3)a=0
+                $('h1').text(a);
+
+                 // 박스1을 왼쪽으로 이동해라. 
+
+            $('.box1 li').eq(a-1).css({'left':0}).stop().animate({'left':'-100%'},1200);
+            $('.box1 li').eq(a).css({'left':'100%'}).stop().animate({'left':'0'},1200);
+        
+
+
+
+            },2000)
+
+
+var b = 0
+            setInterval(function(){
+                // 숫자를 0부터 2까지 무한반복
+                b++;
+                if(b==3)b=0;
+                $('.box2 li').eq(b-1).css({'left':'0'}).stop().animate({'left':'100%'})
+                $('.box2 li').eq(b).css({'left':'-100%'}).stop().animate({'left':'0'})
+
+            },2000)
+
+        
+        
+        })
+        
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+   <div class="box1">
+        <ul>
+            <li><img src="img/1.jpg" alt=""></li>
+            <li><img src="img/2.jpg" alt=""></li>
+            <li><img src="img/3.jpg" alt=""></li>
+        </ul>
+        
+   </div>
+   <div class="box2">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+</div>
+
+
+<section class="wrap">
+    <div class="gallery">
+        <p><img src="https://picsum.photos/id/237/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/238/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/239/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/240/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/241/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/242/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/243/800/600" alt=""></p>
+        <p><img src="https://picsum.photos/id/244/800/600" alt=""></p>
+    </div>
+    <div class="trailler">
+        <ul>
+            <li><img src="https://picsum.photos/id/237/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/238/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/239/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/240/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/241/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/242/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/243/800/600" alt=""></li>
+            <li><img src="https://picsum.photos/id/244/800/600" alt=""></li>
+        </ul>
+
+
+        
+    <p class="left"> < </p>
+    <p class="right"> > </p>
+    </div>
+
+
+</section>
+
+
+<style>
+    .wrap {background-color: yellow;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+    .wrap .gallery{width: 60%;
+                    height: 600px;
+                    background-color: blue;
+                margin: 0 auto;
+                position: relative;}
+    .wrap .gallery p {position: absolute;
+                    left: 0;top: 0;
+                width: 100%;
+                height: 100%;
+            overflow: hidden;
+            display: none;}
+            .wrap .gallery p:nth-child(1) {display: block;}
+
+    .wrap .gallery p img {width: 100%;}
+
+    
+    .wrap .trailler {width: 60%;
+    height: 200px;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+}
+    .wrap .trailler ul {list-style: none;
+                        display: flex;
+                    width: 200%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+    .wrap .trailler li {width: 25%;
+    height: 100%;
+overflow: hidden;}
+    .wrap .trailler li img {width: 100%;}
+
+.left  {width: 50px;
+height: 50px;
+    background-color: #fff;
+display: flex;
+text-align: center;
+align-items: center;
+top: 50%;
+margin-top: -25px;
+left: 0;
+position: absolute;
+
+}
+.right {width: 50px;
+height: 50px;
+    background-color: #fff;
+display: flex;
+text-align: center;
+align-items: center;
+position: absolute;
+right: 0;
+top:50%;
+margin-top: -25px;}
+
+
+
+
+.wrap03 {
+            width: 600px;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+            margin-top: 50px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+
+           
+        }
+
+        .wrap03 ul {
+            list-style: none;
+            
+            height: 250px;
+            display: flex;
+            left: 0;
+            transition: all 0.5s;
+         
+            
+            position: absolute;
+        }
+
+        .wrap03 li {
+            font-size:120px;
+            width: 200px;
+            height: 250px;
+            transform: scale(0.5);
+        
+            background-size: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            transition: all 0.5s;
+            background-color: aqua;
+            text-align: center;
+         
+          
+           
+        }
+        
+        .wrap03 li.on {transform: scale(1);}
+   
+
+       
+      
+        .wrap03 p {position: absolute;
+        top: 50%;
+    left: 0;
+z-index: 10;
+cursor: pointer;
+display: none;
+}
+</style>
+
+
+<div class="wrap03">
+    <p>left</p>
+    <ul>
+        <li>1</li>
+        <li class="on">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</div>
+
+<script>
+
+    //right클릭시 왼쪽으로 이동해라. li의 크기만큼 이동해라 
+
+    var ai = 0;
+    $('.right').click(function(){
+        var liwd = $('.trailler li').width()
+        if(ai<4)ai++;
+        console.log(ai)
+
+        $('.trailler ul').stop().animate({'left':-liwd*ai},1200)
+
+
+    })
+    // left를 클릭시 오른쪽으로 이동해라. li의 크기만큼
+    $('.left').click(function(){
+
+        if(ai>0)ai--;
+        console.log(ai)
+        $('.trailler ul').stop().animate({'left':-liwd*ai},1200)
+    })
+
+
+    // li를 클릭할때마다 p의 이미지가 바뀌어라.
+    $('.trailler li').click(function(){
+
+        var i = $(this).index()
+        console.log(i);
+        $('.gallery p').fadeOut()
+        $('.gallery p').eq(i).fadeIn()
+    })
+
+
+
+    // wrap03 설정
+    var bb=0;
+
+    $('.wrap03 p').click(function(){
+
+        bb++
+        $('.wrap03 ul').css({'left':-200*bb})
+        $('.wrap03 li').removeClass('on');
+        console.log(bb)
+        $('.wrap03 li').eq(bb+1).addClass('on')
+        $('.wrap03 li').eq(bb-1).clone().appendTo('.wrap03 ul')
+    })
+
+    setInterval(function(){
+        $('.wrap03 p').trigger('click')
+
+    },2000)
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
