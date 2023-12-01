@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1 {}
+        .box li {} /*리스트와 서브를 모두선택*/
+        .box>li {}/*리스트만선택*/
+        .box>li>ul>li {}
+        .box>li li {}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>CSS란</h1>
+    <ul class="box">
+        <li>리스트1
+            <ul>
+                <li>서브1</li>
+                <li>서브2</li>
+            </ul></li>
+        <li>리스트2</li>
+    </ul>
+
+    <div class="ex1">
+        <p>none</p>
+        <p>block</p>
+        <p><span>inline</span></p>
+        <p>inline-block</p>
+    </div>
+
+    <style>
+
+        .ex1>p {background-color:rgba(red, green, blue, alpha)
+        padding: 20px;
+    border: 2px solid #000;
+    margin-top: 50px;}
+        .ex1>p:nth-child(1) {display: none;}
+        .ex1>p:nth-child(2) {display: block;}
+        .ex1 span {background-color: red;
+        padding: 20px;
+    display: inline-block;}
+        .ex1>p:nth-child(3) {display: inline-block;}
+        .ex1>p:nth-child(4) {display: inline-block;}
+
+
+        .ex2>div {background-image: url(img/bakery3.jpg);
+        height: 300px;
+        margin-bottom: 20px;}
+
+        .ex2>div:nth-child(2) {background-size: contain;
+        background-repeat: repeat;}
+        .ex2>div:nth-child(4) {background-attachment: scroll;}
+        .ex2>div:nth-child(5) {background-position:200px -200px ;
+        background-repeat: no-repeat;}
+
+        .ex3 div {width: 200px;
+        height: 200px;
+    background-color: #ccddff;}
+.ex3 {background-color: blue;
+position: relative;}
+    .ex3 div:nth-child(1) {position: relative;
+    z-index: 0;}
+    .ex3 div:nth-child(2) {position: absolute;
+    left: 50px;
+top:-100px;
+z-index:-1;
+background-color: aqua;}
+.ex3 div:nth-child(3) {position: fixed;
+left: 0;
+top: 0;}
+        
+    </style>
+
+    <div class="ex2">
+        <div>image</div>
+        <div>size</div>
+        <div>repeat</div>
+        <div>attachment</div>
+        <div>position</div>
+    </div>
+
+    <div class="ex3">
+        <div>relative</div>
+        <div>absolute</div>
+        <div>fixed</div>
+    </div>
+
+
+    <div class="ex4">
+        <p>item1</p>
+        <p>item2</p>
+        <p>item3</p>
+        <p>item4</p>
+    </div>
+
+    <style>
+
+        .ex4 {background-color: yellow;
+        height: 500px;}
+        .ex4 p{border: 2px solid #000;}
+
+        /* 플랙스설정 */
+        .ex4{display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+    .ex4 p{width:20%;
+    order: 5;
+display: flex;
+align-items: flex-end;
+justify-content: center;}
+    .ex4 p:nth-child(3) {
+    order: 6;}
+
+
+    </style>
+
+    
+</body>
+</html>

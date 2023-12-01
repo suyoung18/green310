@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭바만들기_네이버샘플</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+    /*  
+    .tabBar {
+        border: 1px solid #ccc;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .titleBox {
+        margin-bottom: 10px;
+    }
+    .titleBox ul {
+        display: flex;
+    }
+    .titleBox li {
+        margin-right: 5px;
+        cursor: pointer;
+        color: #999;
+    }
+    .titleBox li.on {
+        color: #000;
+    }
+    .titleBox li:hover {
+        text-decoration: underline;
+    }
+    .titleBox li:nth-child(2):before {
+        display: inline-block;
+        content: '\00b7';
+        margin: 0 5px;
+    }
+    .titleBox li:nth-child(3):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox li:nth-child(4):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox li:nth-child(5):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+
+    .listBox {
+        background-color: aqua;
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .listBox>div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .news {
+        background-color: darkseagreen;
+    }
+    .cast {
+        background-color: silver;
+    }
+    .enter {
+        background-color: deeppink;
+    }
+    .sport {
+        background-color: brown;
+    }   
+    .econo {
+        background-color: paleturquoise;
+    }
+
+
+
+/* 쇼핑 
+
+.tabBar1 {
+        border: 1px solid #ccc;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .titleBox1 {
+        margin-bottom: 10px;
+    }
+    .titleBox1 ul {
+        display: flex;
+    }
+    .titleBox1 li {
+        margin-right: 5px;
+        cursor: pointer;
+        color: #999;
+    }
+    .titleBox1 li.on {
+        color: #000;
+    }
+    .titleBox1 li:hover {
+        text-decoration: underline;
+    }
+    .titleBox1 li:nth-child(2):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox1 li:nth-child(3):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox1 li:nth-child(4):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox1 li:nth-child(5):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+
+    .listBox1 {
+        background-color: aqua;
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .listBox1>div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .news1 {
+        background-color: darkseagreen;
+    }
+    .cast1 {
+        background-color: silver;
+    }
+    .enter1 {
+        background-color: deeppink;
+    }
+    .sport1 {
+        background-color: brown;
+    }   
+    
+
+
+    /* 추천구독 
+    .tabBar2 {
+        border: 1px solid #ccc;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .titleBox2 {
+        margin-bottom: 10px;
+    }
+    .titleBox2 ul {
+        display: flex;
+    }
+    .titleBox2 li {
+        margin-right: 5px;
+        cursor: pointer;
+        color: #999;
+    }
+    .titleBox2 li.on {
+        color: #000;
+    }
+    .titleBox2 li:hover {
+        text-decoration: underline;
+    }
+    .titleBox2 li:nth-child(2):before {
+        display: inline-block;
+        content: '\00b7';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(3):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(4):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(5):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+
+    .titleBox2 li:nth-child(6):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(7):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(8):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;}
+        .titleBox2 li:nth-child(9):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(10):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;
+    }
+    .titleBox2 li:nth-child(11):before {
+        display: inline-block;
+        content: '\002f';
+        margin: 0 5px;}
+
+
+
+
+
+    .listBox2 {
+        background-color: aqua;
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .listBox2>div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .news2 {
+        background-color: darkseagreen;
+    }
+    .cast2 {
+        background-color: silver;
+    }
+    .enter2 {
+        background-color: deeppink;
+    }
+    .sport2 {
+        background-color: brown;
+    }   
+    .econo2 {
+        background-color: paleturquoise;
+    }
+
+    .cast3 {
+        background-color: silver;
+    }
+    .enter3 {
+        background-color: deeppink;
+    }
+    .sport3 {
+        background-color: brown;
+    }   
+    .econo3 {
+        background-color: paleturquoise;
+    }
+    .sport4 {
+        background-color: brown;
+    }   
+    .econo4 {
+        background-color: paleturquoise;
+    }*/
+
+
+
+
+
+
+    .tabBar {border: 1px solid #ccc;
+                    margin: 20px;
+                border-radius: 5px;
+            padding: 10px;}
+            .titleBox {
+            margin-bottom: 10px;}
+            .titleBox ul {display: flex;}
+            .titleBox li {margin-right: 5px;
+                        cursor: pointer;
+                        color: #999}
+            .titleBox li.on {color: #000;}
+            .titleBox li:hover {text-decoration: underline;}
+            .titleBox li:nth-child(3)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox li:nth-child(4)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox li:nth-child(5)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox li:nth-child(2)::before {display: inline-block;
+                                content: '\00b7';
+                            margin: 0 5px;}
+
+
+            .listBox {background-color: aqua;
+                position: relative;
+                width: 100%;
+                height: 150px;}
+            .listBox>div {position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            }
+            .news {background-color: bisque;}
+            .cast {background-color: aquamarine;}
+            .enter {background-color: blue;}
+            .sport {background-color: azure;}
+            .econo {background-color: #999;}
+
+
+
+            /* 상세설정 */
+
+            .news ul {display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                height: 100%;}
+            .news>ul>li {width:16.6666% ;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                height: 25%;
+            position: relative;}
+            .hover {display: none;
+                position: absolute;
+                background-color: darkblue;
+            left: 0;
+        top: 0;
+    width: 100%;
+height: 100%;}
+
+        .hover ul {display: flex;
+                    justify-content: center;
+                    align-items: center;
+                width: 100%;
+            height: 100%;}
+        .hover li {margin: 0 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .news li:hover .hover {display: block;}
+
+
+        .cast ul {display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            height: 100%;}
+        .cast li {width: 50%;
+            height: 50%;
+        display: flex;}
+        .cast li>div {
+            width: 50%;
+            height: 100%;
+        }
+        .cast li>div:nth-child(1) {
+            width: 40%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: auto;
+        }
+
+
+
+        .enter_inner {display: flex;
+        width: 100%;
+    height: 100%;}
+        .enter_inner>div { width: 50%;
+                            height: 100%;
+                   } /* overflow: hidden;*/ 
+
+                  .box11 ul {display: flex;
+                    width: 100%;
+                height: 100%;
+                flex-direction: column;}
+                  .box11 li {width: 100%;
+                height: 50%;
+            display: flex;
+        justify-content: center;
+    align-items: center;}
+                .box11 li>div {overflow: hidden;
+                width: 80%;
+            height: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+                    align-items: center;
+        }
+
+.aoo {
+    display: none;
+    }
+
+
+
+
+
+    .tabBar1 {border: 1px solid #ccc;
+                    margin: 20px;
+                border-radius: 5px;
+            padding: 10px;}
+            .titleBox1 {
+            margin-bottom: 10px;}
+            .titleBox1 ul {display: flex;}
+            .titleBox1 li {margin-right: 5px;
+                        cursor: pointer;
+                        color: #999}
+            .titleBox1 li.on {color: #000;}
+            .titleBox1 li:hover {text-decoration: underline;}
+            .titleBox1 li:nth-child(3)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox1 li:nth-child(4)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox1 li:nth-child(5)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox1 li:nth-child(2)::before {display: inline-block;
+                                content: '\00b7';
+                            margin: 0 5px;}
+
+
+            .listBox1 {background-color: aqua;
+                position: relative;
+                width: 100%;
+                height: 150px;}
+            .listBox1>div {position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            }
+
+
+
+
+
+
+
+
+
+            .tabBar2 {border: 1px solid #ccc;
+                    margin: 20px;
+                border-radius: 5px;
+            padding: 10px;}
+            .titleBox2 {
+            margin-bottom: 10px;}
+            .titleBox2 ul {display: flex;}
+            .titleBox2 li {margin-right: 5px;
+                        cursor: pointer;
+                        color: #999}
+            .titleBox2 li.on {color: #000;}
+            .titleBox2 li:hover {text-decoration: underline;}
+            .titleBox2 li:nth-child(3)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox2 li:nth-child(4)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox2 li:nth-child(5)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox2 li:nth-child(2)::before {display: inline-block;
+                                content: '\00b7';
+                            margin: 0 5px;}
+
+                            .titleBox2 li:nth-child(6)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox2 li:nth-child(7)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox2 li:nth-child(8)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+
+
+            .titleBox2 li:nth-child(9)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+            .titleBox2 li:nth-child(10)::before {display: inline-block;
+                                content: '\002f';
+                            margin: 0 5px;}
+
+            .listBox2 {background-color: aqua;
+                position: relative;
+                width: 100%;
+                height: 150px;}
+            .listBox2>div {position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            }
+
+
+
+
+    </style>
+
+
+
+    <!-- 제이쿼리CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+
+        $(function(){
+            // titleBox 의 li의 순번찾기
+            $('.titleBox li').click(function(){
+
+                // 클릭한나 자신의 순번을 변수로 지정하기
+
+                var i = $(this).index()
+                // 콘솔에 확인하기
+                console.log(i)
+                // 찾아낸순번을 listBox안의 div의 순서에 맞게 보이기
+                $('.listBox>div').css({'display':'none'})
+                $('.listBox>div').eq(i).css({'display':'block'})
+            
+            $('.titleBox li').removeClass('on')
+
+            // 클릭한 나자신에게 클래스'on 값 더하기
+            $(this).addClass('on')
+            });
+
+
+
+            // 쇼핑
+            $('.titleBox1 li').click(function(){
+
+// 클릭한나 자신의 순번을 변수로 지정하기
+
+var i = $(this).index()
+// 콘솔에 확인하기
+console.log(i)
+// 찾아낸순번을 listBox안의 div의 순서에 맞게 보이기
+$('.listBox1>div').css({'display':'none'})
+$('.listBox1>div').eq(i).css({'display':'block'})
+
+$('.titleBox1 li').removeClass('on1')
+
+// 클릭한 나자신에게 클래스'on 값 더하기
+$(this).addClass('on1')
+});
+
+
+
+// 추천구독
+$('.titleBox2 li').click(function(){
+
+// 클릭한나 자신의 순번을 변수로 지정하기
+
+var i = $(this).index()
+// 콘솔에 확인하기
+console.log(i)
+// 찾아낸순번을 listBox안의 div의 순서에 맞게 보이기
+$('.listBox2>div').css({'display':'none'})
+$('.listBox2>div').eq(i).css({'display':'block'})
+
+$('.titleBox2 li').removeClass('on1')
+
+// 클릭한 나자신에게 클래스'on 값 더하기
+$(this).addClass('on1')
+});
+
+
+
+        })
+
+
+        </script>
+
+
+
+        
+
+<p class="aoo">
+        // 쇼핑쪽실행
+        $('.titleBox1 li').click(function(){
+
+// 클릭한나 자신의 순번을 변수로 지정하기
+
+var i = $(this).index()
+// 콘솔에 확인하기
+console.log(i)
+// 찾아낸순번을 listBox안의 div의 순서에 맞게 보이기
+$('.listBox1 div').css({'display':'none'})
+$('.listBox1 div').eq(i).css({'display':'block'})
+
+$('.titleBox1 li').removeClass('on')
+
+// 클릭한 나자신에게 클래스'on 값 더하기
+$(this).addClass('on')
+});
+
+
+        // 추천구독쪽 실행
+        $('.titleBox2 li').click(function(){
+
+// 클릭한나 자신의 순번을 변수로 지정하기
+
+var i = $(this).index()
+// 콘솔에 확인하기
+console.log(i)
+// 찾아낸순번을 listBox안의 div의 순서에 맞게 보이기
+$('.listBox2 div').css({'display':'none'})
+$('.listBox2 div').eq(i).css({'display':'block'})
+
+$('.titleBox2 li').removeClass('on')
+
+// 클릭한 나자신에게 클래스'on 값 더하기
+$(this).addClass('on')
+});
+
+        })</p>
+    
+
+</head>
+<body>
+
+
+    <!--  
+
+    <div class="tabBar">
+
+        <div class="titleBox">
+            <ul>
+                <li class="on">뉴스스탠드</li>
+                <li>언론사편집</li>
+                <li>엔터</li>
+                <li>스포츠</li>
+                <li>경제</li>
+            </ul>
+        </div>
+        <div class="listBox">
+            <div class="news">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+
+            <div class="cast"></div>
+            <div class="enter"></div>
+            <div class="sport"></div>
+            <div class="econo"></div>
+        </div>
+    </div>
+    
+
+
+
+
+    <div class="tabBar1">
+
+        <div class="titleBox1">
+            <ul>
+                <li class="on1">쇼핑</li>
+                <li>맨즈</li>
+                <li>원쁠딜</li>
+                <li>쇼핑라이브</li>
+            </ul>
+        </div>
+        <div class="listBox1">
+            <div class="news1">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+
+            <div class="cast1"></div>
+            <div class="enter1"></div>
+            <div class="sport1"></div>
+            <div class="econo1"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="tabBar2">
+
+        <div class="titleBox2">
+            <ul>
+                <li class="on2">추천・구독</li>
+                <li>자동차</li>
+                <li>웹툰</li>
+                <li>패션뷰티</li>
+                <li>레시피</li>
+                <li>리빙</li>
+                <li>책방</li>
+                <li>지식+</li>
+                <li>건강</li>
+                <li>게임</li>
+                
+            </ul>
+        </div>
+        <div class="listBox2">
+            <div class="news2">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+
+            <div class="cast2">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="enter2">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="sport2">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="econo2">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="cast3">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="enter3"><ul>
+                <li><a href="#">기사내용1</a></li>
+                <li><a href="#">기사내용2</a></li>
+                <li><a href="#">기사내용3</a></li>
+                <li><a href="#">기사내용4</a></li>
+                <li><a href="#">기사내용5</a></li>
+                <li><a href="#">기사내용6</a></li>
+            </ul></div>
+            <div class="sport3">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="econo3">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="sport4">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+            <div class="econo4">
+                <ul>
+                    <li><a href="#">기사내용1</a></li>
+                    <li><a href="#">기사내용2</a></li>
+                    <li><a href="#">기사내용3</a></li>
+                    <li><a href="#">기사내용4</a></li>
+                    <li><a href="#">기사내용5</a></li>
+                    <li><a href="#">기사내용6</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+-->
+
+
+<div class="tabBar">
+
+    <div class="titleBox">
+        <ul>
+            <li class="on">뉴스스탠드</li>
+            <li>언론사편집</li>
+            <li>엔터</li>
+            <li>스포츠</li>
+            <li>경제</li>
+        </ul>
+    </div>
+    <div class="listBox">
+        <div class="news" style="display: block;">
+            <ul>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+            </ul>
+        </div>
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        <div class="enter">
+          <div class="enter_inner">
+                <div class="box11">
+                    <ul>
+                        <li>
+                            <div><img src="https://picsum.photos/id/88/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                        <li>
+                            <div><img src="https://picsum.photos/id/80/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+        <div class="sport"></div>
+        <div class="econo"></div>
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tabBar1">
+
+    <div class="titleBox1">
+        <ul>
+            <li class="on1">쇼핑</li>
+            <li>맨즈</li>
+            <li>원쁠딜</li>
+            <li>쇼핑라이브</li>
+            
+        </ul>
+    </div>
+    <div class="listBox1">
+        <div class="news" style="display: block;">
+            <ul>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+            </ul>
+        </div>
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        <div class="enter">
+          <div class="enter_inner">
+                <div class="box11">
+                    <ul>
+                        <li>
+                            <div><img src="https://picsum.photos/id/88/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                        <li>
+                            <div><img src="https://picsum.photos/id/80/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+        <div class="cast">
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tabBar2">
+
+    <div class="titleBox2">
+        <ul>
+            <li class="on">추천・구독</li>
+            <li>자동차</li>
+            <li>웹툰</li>
+            <li>패션뷰티</li>
+            <li>레시피</li>
+            <li>리빙</li>
+            <li>책방</li>
+            <li>지식+</li>
+            <li>건강</li>
+            <li>게임</li>
+        </ul>
+    </div>
+    <div class="listBox2">
+        <div class="news" style="display: block;">
+            <ul>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+               <li>
+                <div class="hover">
+                    <ul>
+                        <li>구독</li>
+                        <li>기사보기</li>
+                    </ul>
+                </div>
+               </li>
+            </ul>
+        </div>
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        <div class="enter">
+          <div class="enter_inner">
+                <div class="box11">
+                    <ul>
+                        <li>
+                            <div><img src="https://picsum.photos/id/88/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                        <li>
+                            <div><img src="https://picsum.photos/id/80/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+        
+        
+
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        <div class="enter">
+          <div class="enter_inner">
+                <div class="box11">
+                    <ul>
+                        <li>
+                            <div><img src="https://picsum.photos/id/88/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                        <li>
+                            <div><img src="https://picsum.photos/id/80/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        <div class="enter">
+          <div class="enter_inner">
+                <div class="box11">
+                    <ul>
+                        <li>
+                            <div><img src="https://picsum.photos/id/88/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                        <li>
+                            <div><img src="https://picsum.photos/id/80/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+        <div class="enter">
+          <div class="enter_inner">
+                <div class="box11">
+                    <ul>
+                        <li>
+                            <div><img src="https://picsum.photos/id/88/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                        <li>
+                            <div><img src="https://picsum.photos/id/80/200/100" alt=""></div>
+                            <div>text</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+
+
+
+        <div class="cast" >
+            <ul>
+                <li>
+                    <div><img src="https://picsum.photos/id/48/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/49/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/40/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+                <li>
+                    <div><img src="https://picsum.photos/id/42/200/100" alt=""></div>
+                    <div>text</div>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+</div>
+
+
+
+</body>
+</html>

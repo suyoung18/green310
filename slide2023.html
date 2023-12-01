@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        ul {list-style: none;}
+
+        .wrap {
+            position: relative;
+        }
+
+        .wrap .slide {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+
+        .wrap .slide ul {
+            height: 500px;
+            width: 100%;
+            position: relative;
+        }
+
+
+        .wrap .slide li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        .wrap .slide li:nth-child(1) {background-image: url(img/0.png);}
+        .wrap .slide li:nth-child(2) {background-image: url(img/1.png);}
+        .wrap .slide li:nth-child(3) {background-image: url(img/2.png);}
+
+        .wrap .btn {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+
+        }
+
+
+        .wrap .btn ul {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            
+        }
+
+        .wrap .btn li {
+            text-indent: -9999px;
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+
+    <div class="wrap">
+        <div class="sldie">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div class="btn">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

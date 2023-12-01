@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내장객체활용 날짜 정보가져오기</title>
+    <!-- 제이쿼리CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+
+
+    <h1>내장객체란?</h1>
+    <p>자바스트립트 자체는 객체로 구성되어있어 자료를 가져와 사용하는 내장객체를 알아보자</p>
+
+
+
+    <ul >
+        <li>array() - 배열</li>
+        <li>Number() - 숫자</li>
+        <li>function() - 함수</li>
+        <li>Math() - 수학적으로 나눠는 구조</li>
+        <li>Date() - 날짜</li>
+    </ul>
+
+    <div class="ex001">
+        
+    </div>
+
+        <script>
+
+            $(function(){
+
+                // 변수정의 
+
+                // 날짜정보를 가져오는 변수를 만듬
+
+                var now = new Date()
+                $('.ex001').text(now)
+                var year = now.getFullYear()
+                $('.ex001').text(year+'년')
+
+                // getMonth() - 월가져오기
+                // getDate() - 날짜가져오기
+                // getDay() - 요일가져오기
+                // getHours() - 시간가져오기
+                // getMinutes() - 분가져오기
+                // getSeconds() - 초가져오기
+
+                var month = now.getMonth();
+
+                // 1월,2월~~~12월 배열로 만드시고 그 내부에 있는 내용을 
+                // 순번을 찾아 맞춰놓기
+                
+
+                var monArr = ['Jan','2월','3월','4월','5월','6월','7월','8월','9월','10월','Nov','12월']
+
+
+
+
+                $('.ex001').text(now)
+                $('.ex001').text(monArr[month])
+                var date = now.getDate()
+                $('.ex001').text(date)
+                var day = now.getDay()
+                $('.ex001').text(day)
+                var dayArr = ['일','월','화','수','목','금','토']
+
+                $('.ex001').text(dayArr[day]+'요일')
+                
+
+                setInterval(function(){
+
+                    var now = new Date()
+                    var hr = now.getHours()
+                    var min = now.getMinutes()
+                    var sec = now.getSeconds()
+
+                $('.time span').eq(0).text(hr)
+                $('.time span').eq(1).text(min)
+                $('.time span').eq(2).text(sec)
+                },1000)
+
+            })
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+        <div class="time">
+            <span>00</span>:<span>00</span>:<span>00</span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

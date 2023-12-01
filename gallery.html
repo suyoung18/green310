@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery만들기</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol {list-style: none;}
+
+a {color: #000;
+    text-decoration: none;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+    .wrap {width: 800px;
+        margin: 20px auto;
+        background-color: rebeccapurple;
+    }
+    
+    .container {
+        width: 700px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: darkorchid;
+        position: relative;
+    }
+
+    .container p {
+        
+    }
+
+    .container p img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+
+    .trailer {
+        width: 700px;
+        height: 100px;
+        background-color: gainsboro;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .trailer ul {
+        display: flex;
+        width: 1600px;
+
+    }
+
+    .trailer li {
+        background-color: floralwhite;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .trailer li img {
+        width: 100%;
+        height: auto;
+        transform: translateY(-20%);
+    }
+
+
+
+
+
+
+
+
+
+    .container1 {
+        width: 700px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: darkorchid;
+        position: relative;
+    }
+
+    .container1 p {
+        
+    }
+
+    .container1 p img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+
+    .trailer1 {
+        width: 700px;
+        height: 100px;
+        background-color: gainsboro;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .trailer1 ul {
+        display: flex;
+        width: 1600px;
+
+    }
+
+    .trailer1 li {
+        background-color: floralwhite;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .trailer1 li img {
+        width: 100%;
+        height: auto;
+        transform: translateY(-20%);
+    }
+
+
+    </style>
+
+
+    <!-- 제이쿼리CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+
+    <script>
+
+        $(function(){
+
+
+            // 트레일러에 li 를 클릭했을때
+            // 컨테이너에 p가 보여라
+
+            // 트레일러의 li 를 클릭했을때 본인의 순번을 찾아라
+            // 컨테이너에 p가 li가 클릭한 순번에 맞게 보여라.
+
+
+            $('.trailer li').click(function(){
+
+
+                var i = $(this).index()
+                $('.container p').css({'display':'none'})
+                $('.container p').eq(i).css({'display':'block'})
+
+            });
+
+            // 
+
+            $('.trailer1 li').click(function(){
+
+
+var i = $(this).index()
+$('.container1 p').css({'display':'none'})
+$('.container1 p').eq(i).css({'display':'block'})
+
+});
+
+
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <p style="display: block;"><img src="https://picsum.photos/id/140/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/160/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/170/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/180/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/190/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/200/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/210/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/220/700/600" alt=""></p>
+        </div>
+
+        <div class="trailer">
+            <ul>
+                <li><img src="https://picsum.photos/id/140/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/160/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/170/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/180/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/190/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/200/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/210/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/220/700/600" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="wrap">
+        <div class="container1">
+            <p style="display: block;"><img src="https://picsum.photos/id/140/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/160/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/170/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/180/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/190/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/200/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/210/700/600" alt=""></p>
+            <p><img src="https://picsum.photos/id/220/700/600" alt=""></p>
+        </div>
+
+        <div class="trailer1">
+            <ul>
+                <li><img src="https://picsum.photos/id/140/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/160/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/170/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/180/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/190/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/200/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/210/700/600" alt=""></li>
+                <li><img src="https://picsum.photos/id/220/700/600" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>

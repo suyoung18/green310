@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스트립트 함수</title>
+</head>
+<body>
+    
+    <h1>함수란</h1>
+    <p>함수를 사용하게 되면 일련의 실행문들을 메모리에 저장했다가 필요할때 해당
+        함수의 이름으로 다시 호출하여 사용할수 있음
+    </p>
+
+    <h2>실행</h2>
+
+    <script>
+
+        // 함수작성법
+        // funcion 식별자 - 작명이름(){
+
+        //호출할때 수행될 실행문작성 
+
+        // }
+
+    function good(){
+
+
+        alert('잘하셨습네다.')
+
+    }
+
+
+
+
+
+    </script>
+
+    <button onclick="good()">버틈</button>
+
+
+
+    <div id="gallery">
+
+        <a href="#" class="left" onclick="prev()">
+            &lt;
+        </a>
+        <img src="https://picsum.photos/id/237/500/500" alt="" id="img">
+        <a href="#" class="right" onclick="next()">
+            &gt;
+        </a>
+
+        <style>
+            #gallery {
+                background-color: bisque;
+                width: 700px;
+                text-align: center;
+                padding: 20px 0;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .left {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                color: #000;
+                left: -25px;
+                top: 50%;
+                background-color: #ccc;
+                font-size: 30px;
+                margin-top: -25px;
+
+
+            }
+            .right {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                color: #000;
+                left: -25px;
+                top: 50%;
+                background-color: #ccc;
+                font-size: 30px;
+                margin-top: -25px;
+
+
+            }
+
+
+            body {padding-bottom: 500px;}
+
+
+
+        
+
+
+        </style>
+
+<!--
+
+        <script>
+
+
+            var i = 0
+
+            function next(){
+
+                i++
+                if(i>0)i=5
+                console.log(i)
+                document.getElementById('img').src="https://picsum.photos/id/"+(237+i)+"/500/500"
+            
+                return false;
+            
+            }   
+
+            function prev(){
+
+                i--
+                if(i<0)i=5
+                console.log(i)
+                document.getElementById('img').src="https://picsum.photos/id/"+(237+i)+"/500/500"
+                return false;
+            }
+
+        </script>
+
+
+
+    -->
+
+
+    <script>
+
+        var i = 0
+        function next(){
+
+            i++
+            if(i>0)a=10
+            console.log(i)
+            document.getElementById('img').src="https://picsum.photos/id/"+(237+i)+"/500/500"
+        
+            return false;
+
+        } 
+
+        function prev(){
+
+            i--
+            if(i<0)i=10
+            console.log(i)
+            document.getElementById('img').src="https://picsum.photos/id/"+(237+i)+"/500/500"
+        
+            return false;
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
